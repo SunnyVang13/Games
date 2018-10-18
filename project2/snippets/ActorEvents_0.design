@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="3" id="0">
+        <step comment="false" x="13" y="7">
+            <group eventID="3" id="-1">
+                <if comment="false" x="24" y="32">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="35" y="65">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="-10"/>
+                        </set-dxy>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="1" id="1"/>
+                    </keystate>
+                </if>
+                <else-if comment="false" x="24" y="104">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="35" y="137">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="10"/>
+                        </set-dxy>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="5" id="1"/>
+                    </keystate>
+                </else-if>
+                <else comment="false" x="24" y="176">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="35" y="196">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                </else>
+                <if comment="false" x="24" y="235">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="35" y="268">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="-10"/>
+                        </set-dxy>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="6" id="1"/>
+                    </keystate>
+                </if>
+                <else-if comment="false" x="24" y="307">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="35" y="340">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="10"/>
+                        </set-dxy>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="3" id="1"/>
+                    </keystate>
+                </else-if>
+                <else comment="false" x="24" y="379">
+                    <group eventID="3" id="-1">
+                        <set-dxy comment="false" x="35" y="399">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>
