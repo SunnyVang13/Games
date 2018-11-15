@@ -8,29 +8,15 @@
             <poly data="4,0,0,280,0,280,320,0,320" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="0" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Hero" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
-        <snippets>
-            <s enabled="true" id="3">
-                <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val="Walking Animation"/>
-                <prop id="3" list="0" val="Idle Animation1 "/>
-                <prop id="4" list="0" val="Jump Animation"/>
-            </s>
-        </snippets>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="0" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Hero" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
+        <snippets/>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="256" id="1" name="Hero" shared="false" width="256">
-        <anim across="1" down="1" durations="100" height="256" id="0" loop="true" name="Idle Animation1 " numframes="1" originx="128" originy="128" sync="false" version="2" width="256">
-            <poly data="4,40,70,194,70,194,250,40,250" density="0.1" fric="0.2" gid="3" id="0" name="Idle Animation" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" down="1" durations="100" height="225" id="1" loop="false" name="Jump Animation" numframes="1" originx="70" originy="112" sync="false" version="2" width="140">
-            <poly data="4,0,0,140,0,140,225,0,225" density="0.1" fric="0.2" gid="3" id="0" name="Jump Animation" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="600" id="2" loop="true" name="Walking Animation" numframes="10" originx="100" originy="100" sync="false" version="2" width="800">
-            <poly data="4,0,0,200,0,200,200,0,200" density="0.1" fric="0.2" gid="3" id="0" name="Idle Animation" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="3" defaultAnimation="3" desc="" height="31" id="1" name="Hero" shared="false" width="16">
+        <anim across="1" down="1" durations="100" height="31" id="3" loop="true" name="Idle" numframes="1" originx="8" originy="15" sync="false" version="2" width="16">
+            <poly data="4,0,0,16,0,16,31,0,31" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="259" id="5" name="Stage 1" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="343" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="5" name="Stage 1" numframes="0" oid="-1" repeats="false" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
     <tileset across="6" atlasID="0" desc="" down="7" id="4" name="Tiles" oid="-1" shared="false" th="32" tw="32">
         <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
