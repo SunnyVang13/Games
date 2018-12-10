@@ -2,16 +2,23 @@
 <scene depth="2" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="45.0" height="480" id="0" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
-        <layer blendMode="normal" color="0,255,0" id="1" locked="false" name="Layer 1" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,255,0" id="1" locked="false" name="Layer 1" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <background blendMode="normal" customScrollFactor="false" id="2" locked="true" name="Stage 1" opacity="100" order="1" rid="5" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="128,128,128" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
-    <regions/>
+    <regions>
+        <region b="64" g="64" h="5" id="0" name="Region 0" pts="4,6.0,0.0,6.0,5.0,0.0,5.0,0.0,0.0" r="64" type="box" w="6" x="-174" y="218"/>
+    </regions>
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="2" c="false" group="3" id="2" name="Enemy 2" sx="0.2" sy="0.2" x="-106" y="-122" z="0"/>
         <actor a="0.0" aid="3" c="false" group="3" id="2" name="Enemy 3" sx="0.2" sy="0.2" x="464" y="-121" z="0"/>
         <actor a="0.0" aid="4" c="false" group="0" id="0" name="Hero 4" sx="1.75" sy="1.8333334" x="303" y="398" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="2" name="Enemy 5" sx="0.2" sy="0.2" x="-41" y="-123" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="2" name="Enemy 6" sx="0.2" sy="0.2" x="35" y="-121" z="0"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="2" name="Enemy 7" sx="0.2" sy="0.2" x="396" y="-122" z="0"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="2" name="Enemy 8" sx="0.2" sy="0.2" x="324" y="-119" z="0"/>
     </actors>
     <snippets/>
     <terrain/>

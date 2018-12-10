@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_6 extends ActorScript
+class ActorEvents_2 extends ActorScript
 {
 	
 	
@@ -85,21 +85,23 @@ class ActorEvents_6 extends ActorScript
 		/* ======================== Actor of Type ========================= */
 		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && sameAsAny(getActorType(2), event.otherActor.getType(),event.otherActor.getGroup()))
+			if(wrapper.enabled && sameAsAny(getActorType(0), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
-				recycleActor(event.otherActor);
 				recycleActor(actor);
 			}
 		});
 		
-		/* ======================= After N seconds ======================== */
-		runLater(1000 * 2, function(timeTask:TimedTask):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				recycleActor(actor);
+				if((actor.getAnimation() == "Idle"))
+				{
+					actor.push((Engine.engine.getGameAttribute("X of Hero") - actor.getX()), (Engine.engine.getGameAttribute("Y of Hero") - actor.getY()), 1);
+				}
 			}
-		}, actor);
+		});
 		
 	}
 	
