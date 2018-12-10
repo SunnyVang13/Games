@@ -82,11 +82,5 @@
             <int id="1" val="0"/>
         </event-key-press-release>
     </group>
-    <group eventID="1" id="1">
-        <play-sound4 comment="false" x="137" y="169">
-            <int id="0" val="0"/>
-            <sound eid="47" id="1"/>
-        </play-sound4>
-    </group>
     <group eventID="2" id="-1"/>
 </groups>

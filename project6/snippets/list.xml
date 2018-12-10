@@ -10,7 +10,7 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_20_20_Shooting" classname="scripts.Design_20_20_Shooting" desc="" description="" design="true" drawOrder="0" id="20" name="Shooting" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <number default="30" defaultValue="30" desc="" dropdown="" fullname="Bullet Speed" hidden="false" id="1" name="_BulletSpeed" order="1"/>
+        <number default="30.0" defaultValue="30.0" desc="" dropdown="" fullname="Bullet Speed" hidden="false" id="1" name="_BulletSpeed" order="1"/>
         <blocks/>
         <events>
             <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>

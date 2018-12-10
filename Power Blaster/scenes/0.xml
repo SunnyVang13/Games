@@ -9,11 +9,11 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="0" id="0" name="Hero 1" sx="2.0" sy="1.8" x="49" y="52" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="2" name="Enemy 2" sx="0.2" sy="0.2" x="-106" y="-122" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="2" name="Enemy 3" sx="0.2" sy="0.2" x="464" y="-121" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="0" id="0" name="Hero 4" sx="1.75" sy="1.8333334" x="303" y="398" z="0"/>
     </actors>
     <snippets/>
-    <terrain>
-        <p pts="4,640.0,480.0,0.0,480.0,0.0,0.0,640.0,0.0" x="0.0" y="0.0"/>
-    </terrain>
+    <terrain/>
     <atlases members="" retainAtlases="true"/>
 </scene>
