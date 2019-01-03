@@ -71,7 +71,11 @@
     </attcats>
     <props/>
     <attributes>
+        <number cid="-1" id="3" name="Hero Y" save="true" value="0.0"/>
+        <number cid="-1" id="4" name="Score" save="true" value="0"/>
+        <number cid="-1" id="2" name="Hero X" save="true" value="0.0"/>
         <number cid="-1" id="0" name="X of Hero" save="true" value="0.0"/>
+        <number cid="-1" id="5" name="Enemies Killed" save="true" value="0"/>
         <number cid="-1" id="1" name="Y of Hero" save="true" value="0.0"/>
     </attributes>
     <collisions>

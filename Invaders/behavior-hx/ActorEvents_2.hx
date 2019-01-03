@@ -71,34 +71,45 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_2 extends ActorScript
 {
+	public var _HealthPoints:Float;
+	
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_Hit():Void
+	{
+		_HealthPoints -= 1;
+		propertyChanged("_HealthPoints", _HealthPoints);
+		actor.setFilter([createNegativeFilter()]);
+		runLater(1000 * .1, function(timeTask:TimedTask):Void
+		{
+			actor.clearFilters();
+		}, actor);
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Health Points", "_HealthPoints");
+		_HealthPoints = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && sameAsAny(getActorType(0), event.otherActor.getType(),event.otherActor.getGroup()))
-			{
-				recycleActor(actor);
-			}
-		});
+		/* ======================== When Creating ========================= */
+		_HealthPoints = asNumber(3);
+		propertyChanged("_HealthPoints", _HealthPoints);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((actor.getAnimation() == "Idle"))
+				if((_HealthPoints <= 0))
 				{
-					actor.push((Engine.engine.getGameAttribute("X of Hero") - actor.getX()), (Engine.engine.getGameAttribute("Y of Hero") - actor.getY()), 1);
+					playSound(getSound(7));
+					recycleActor(actor);
 				}
 			}
 		});

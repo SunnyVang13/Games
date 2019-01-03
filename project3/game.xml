@@ -31,14 +31,14 @@
         <scale enabled="true" name="1x"/>
         <scale enabled="true" name="1.5x"/>
         <scale enabled="true" name="2x"/>
-        <scale enabled="true" name="3x"/>
+        <scale enabled="false" name="3x"/>
         <scale enabled="true" name="4x"/>
     </webScales>
     <desktopScales>
         <scale enabled="true" name="1x"/>
         <scale enabled="true" name="1.5x"/>
         <scale enabled="true" name="2x"/>
-        <scale enabled="true" name="3x"/>
+        <scale enabled="false" name="3x"/>
         <scale enabled="true" name="4x"/>
     </desktopScales>
     <iOSScales>
@@ -60,8 +60,8 @@
     <groups/>
     <cgroups>
         <cgroup g1="0" g2="1"/>
-        <cgroup g1="1" g2="3"/>
         <cgroup g1="0" g2="3"/>
+        <cgroup g1="1" g2="3"/>
         <cgroup g1="3" g2="3"/>
     </cgroups>
     <input>
@@ -78,6 +78,7 @@
     <props/>
     <attributes>
         <number cid="-1" id="0" name="Score" save="true" value="0.0"/>
+        <number cid="-1" id="1" name="Enemies Killed" save="true" value="0.0"/>
     </attributes>
     <collisions>
         <poly id="1" name="Square" pts="0.0,0.0#0.0,1.0#1.0,1.0#1.0,0.0"/>

@@ -14,10 +14,10 @@
     </group>
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <draw comment="false" x="15" y="15">
+        <draw comment="false" x="36" y="40">
             <group eventID="2" id="-1">
-                <draw-text comment="false" x="26" y="40">
-                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                <draw-text comment="false" x="47" y="65">
+                    <int id="0" val=""/>
                     <int id="1" val="10"/>
                     <int id="2" val="0"/>
                 </draw-text>

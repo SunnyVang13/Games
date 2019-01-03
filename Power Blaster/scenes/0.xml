@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="2" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="45.0" height="480" id="0" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+<scene depth="1" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="45.0" height="480" id="0" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
-        <layer blendMode="normal" color="0,255,0" id="1" locked="false" name="Layer 1" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <background blendMode="normal" customScrollFactor="false" id="2" locked="true" name="Stage 1" opacity="100" order="1" rid="5" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
-        <layer blendMode="normal" color="128,128,128" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="128,128,128" id="3" locked="false" name="Layer 3" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
     <regions>
@@ -12,13 +11,20 @@
     </regions>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="2" c="false" group="3" id="2" name="Enemy 2" sx="0.2" sy="0.2" x="-106" y="-122" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="2" name="Enemy 3" sx="0.2" sy="0.2" x="464" y="-121" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="0" id="0" name="Hero 4" sx="1.75" sy="1.8333334" x="303" y="398" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="3" id="2" name="Enemy 5" sx="0.2" sy="0.2" x="-41" y="-123" z="0"/>
-        <actor a="0.0" aid="6" c="false" group="3" id="2" name="Enemy 6" sx="0.2" sy="0.2" x="35" y="-121" z="0"/>
-        <actor a="0.0" aid="7" c="false" group="3" id="2" name="Enemy 7" sx="0.2" sy="0.2" x="396" y="-122" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="3" id="2" name="Enemy 8" sx="0.2" sy="0.2" x="324" y="-119" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="0" id="0" name="Hero 3" sx="1.75" sy="1.7083334" x="309" y="207" z="3"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="2" name="Enemy 9" sx="0.2" sy="0.2" x="-82" y="60" z="3"/>
+        <actor a="0.0" aid="11" c="false" group="3" id="2" name="Enemy 11" sx="0.2" sy="0.2" x="458" y="70" z="3"/>
+        <actor a="0.0" aid="12" c="false" group="3" id="2" name="Enemy 12" sx="0.2" sy="0.2" x="62" y="-119" z="3"/>
+        <actor a="0.0" aid="14" c="false" group="3" id="2" name="Enemy 14" sx="0.2" sy="0.2" x="292" y="-118" z="3"/>
+        <actor a="0.0" aid="15" c="false" group="3" id="2" name="Enemy 15" sx="0.2" sy="0.2" x="70" y="260" z="3"/>
+        <actor a="0.0" aid="16" c="false" group="3" id="2" name="Enemy 16" sx="0.2" sy="0.2" x="301" y="268" z="3"/>
+        <actor a="0.0" aid="17" c="false" group="3" id="2" name="Enemy 17" sx="0.2" sy="0.2" x="-69" y="-94" z="3"/>
+        <actor a="0.0" aid="18" c="false" group="3" id="2" name="Enemy 18" sx="0.2" sy="0.2" x="-69" y="249" z="3"/>
+        <actor a="0.0" aid="19" c="false" group="3" id="2" name="Enemy 19" sx="0.2" sy="0.2" x="447" y="-106" z="3"/>
+        <actor a="0.0" aid="20" c="false" group="3" id="2" name="Enemy 20" sx="0.2" sy="0.2" x="355" y="157" z="3"/>
+        <actor a="0.0" aid="21" c="false" group="3" id="2" name="Enemy 21" sx="0.2" sy="0.2" x="28" y="137" z="3"/>
+        <actor a="0.0" aid="22" c="false" group="3" id="2" name="Enemy 22" sx="0.2" sy="0.2" x="434" y="247" z="3"/>
+        <actor a="0.0" aid="23" c="false" group="3" id="2" name="Enemy 23" sx="0.2" sy="0.2" x="344" y="-6" z="3"/>
     </actors>
     <snippets/>
     <terrain/>

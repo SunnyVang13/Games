@@ -72,16 +72,17 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class SceneEvents_0 extends SceneScript
 {
-	public var _blurRadius:Float;
-	public var _s:Dynamic;
+	public var _VictoryCounter:Float;
+	public var _Win:Bool;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
-		nameMap.set("blurRadius", "_blurRadius");
-		_blurRadius = 0.0;
-		nameMap.set("s", "_s");
+		nameMap.set("Victory Counter", "_VictoryCounter");
+		_VictoryCounter = 0.0;
+		nameMap.set("Win?", "_Win");
+		_Win = false;
 		
 	}
 	
@@ -89,16 +90,41 @@ class SceneEvents_0 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		/* This prevents the Hero from freezing if
-he exits the screen. */
-		getActor(1).makeAlwaysSimulate();
+		playSound(getSound(8));
+		
+		/* ======================= Member of Group ======================== */
+		addWhenTypeGroupKilledListener(getActorGroup(4), function(eventActor:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_VictoryCounter += 1;
+				propertyChanged("_VictoryCounter", _VictoryCounter);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_VictoryCounter == 5))
+				{
+					_Win = true;
+					propertyChanged("_Win", _Win);
+				}
+			}
+		});
 		
 		/* ========================= When Drawing ========================= */
 		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				g.drawString("" + Engine.engine.getGameAttribute("Score"), 10, 0);
+				g.setFont(getFont(9));
+				if(_Win)
+				{
+					g.drawString("" + "YOU WIN!", 240, 211);
+				}
 			}
 		});
 		

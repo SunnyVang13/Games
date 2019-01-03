@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <collide comment="false" x="15" y="15">
+        <collide comment="false" x="25" y="17">
             <group eventID="1" id="-1">
-                <die comment="false" x="26" y="45">
+                <die comment="false" x="36" y="47">
                     <ACTOR eid="this" id="0"/>
                 </die>
-                <play-sound4 comment="false" x="26" y="72">
+                <play-sound4 comment="false" x="36" y="74">
                     <int id="0" val="0"/>
                     <sound eid="47" id="1"/>
                 </play-sound4>
-                <set-game-val-0 comment="false" x="26" y="99">
+                <set-game-val-0 comment="false" x="36" y="101">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-game-val-0 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
