@@ -20,7 +20,7 @@
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="2" name="step" order="7" repeats="true"/>
-            <event displayName=" " enabled="true" id="4" name="event-collide-actortotype" order="3" repeats="true"/>
+            <event displayName=" Actor - Type" enabled="true" id="4" name="event-collide-actortotype" order="3" repeats="true"/>
             <event displayName="Actor - Type" enabled="true" id="5" name="event-collide-actortotype" order="5" repeats="false"/>
         </events>
     </snippet>
@@ -100,6 +100,12 @@
             <event displayName="FireBullet" enabled="true" id="6" name="event-custom" order="10" repeats="true"/>
             <event displayName="Updated" enabled="true" id="9" name="step" order="9" repeats="true"/>
             <event displayName="Reload" enabled="true" id="10" name="event-custom" order="11" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="8" attachedevent="true" class="scripts.ActorEvents_8" classname="scripts.ActorEvents_8" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="7" name="ActorEvents_8" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
         </events>
     </snippet>
 </pack>

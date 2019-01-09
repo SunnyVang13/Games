@@ -13,6 +13,16 @@
                     <int id="1" val="155"/>
                     <int id="2" val=".5"/>
                 </draw-text>
+                <draw-text comment="false" x="26" y="85">
+                    <int id="0" val="Diamonds Collected:"/>
+                    <int id="1" val="420"/>
+                    <int id="2" val="0"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="105">
+                    <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="618"/>
+                    <int id="2" val=".5"/>
+                </draw-text>
             </group>
         </draw>
     </group>

@@ -7,24 +7,30 @@
     </layers>
     <joints/>
     <regions>
-        <region b="64" g="64" h="5" id="0" name="Region 0" pts="4,6.0,0.0,6.0,5.0,0.0,5.0,0.0,0.0" r="64" type="box" w="6" x="-174" y="218"/>
+        <region b="64" g="64" h="5" id="0" name="Region 0" pts="4,0.0,0.0,0.0,5.0,6.0,5.0,6.0,0.0" r="64" type="box" w="6" x="-174" y="218"/>
     </regions>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="3" c="false" group="0" id="0" name="Hero 3" sx="1.75" sy="1.7083334" x="309" y="207" z="3"/>
-        <actor a="0.0" aid="9" c="false" group="3" id="2" name="Enemy 9" sx="0.2" sy="0.2" x="-82" y="60" z="3"/>
-        <actor a="0.0" aid="11" c="false" group="3" id="2" name="Enemy 11" sx="0.2" sy="0.2" x="458" y="70" z="3"/>
-        <actor a="0.0" aid="12" c="false" group="3" id="2" name="Enemy 12" sx="0.2" sy="0.2" x="62" y="-119" z="3"/>
+        <actor a="0.0" aid="32" c="false" group="4" id="8" name="Diamond 32" sx="1.0" sy="1.0" x="192" y="266" z="3"/>
+        <actor a="0.0" aid="3" c="false" group="0" id="0" name="Hero 3" sx="1.5" sy="1.7083334" x="309" y="207" z="3"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="2" name="Enemy 9" sx="0.2" sy="0.2" x="-22" y="80" z="3"/>
+        <actor a="0.0" aid="11" c="false" group="3" id="2" name="Enemy 11" sx="0.2" sy="0.2" x="442" y="86" z="3"/>
+        <actor a="0.0" aid="12" c="false" group="3" id="2" name="Enemy 12" sx="0.2" sy="0.2" x="127" y="-115" z="3"/>
         <actor a="0.0" aid="14" c="false" group="3" id="2" name="Enemy 14" sx="0.2" sy="0.2" x="292" y="-118" z="3"/>
-        <actor a="0.0" aid="15" c="false" group="3" id="2" name="Enemy 15" sx="0.2" sy="0.2" x="70" y="260" z="3"/>
-        <actor a="0.0" aid="16" c="false" group="3" id="2" name="Enemy 16" sx="0.2" sy="0.2" x="301" y="268" z="3"/>
-        <actor a="0.0" aid="17" c="false" group="3" id="2" name="Enemy 17" sx="0.2" sy="0.2" x="-69" y="-94" z="3"/>
-        <actor a="0.0" aid="18" c="false" group="3" id="2" name="Enemy 18" sx="0.2" sy="0.2" x="-69" y="249" z="3"/>
-        <actor a="0.0" aid="19" c="false" group="3" id="2" name="Enemy 19" sx="0.2" sy="0.2" x="447" y="-106" z="3"/>
-        <actor a="0.0" aid="20" c="false" group="3" id="2" name="Enemy 20" sx="0.2" sy="0.2" x="355" y="157" z="3"/>
-        <actor a="0.0" aid="21" c="false" group="3" id="2" name="Enemy 21" sx="0.2" sy="0.2" x="28" y="137" z="3"/>
-        <actor a="0.0" aid="22" c="false" group="3" id="2" name="Enemy 22" sx="0.2" sy="0.2" x="434" y="247" z="3"/>
-        <actor a="0.0" aid="23" c="false" group="3" id="2" name="Enemy 23" sx="0.2" sy="0.2" x="344" y="-6" z="3"/>
+        <actor a="0.0" aid="16" c="false" group="3" id="2" name="Enemy 16" sx="0.2" sy="0.2" x="226" y="238" z="3"/>
+        <actor a="0.0" aid="17" c="false" group="3" id="2" name="Enemy 17" sx="0.2" sy="0.2" x="22" y="-32" z="3"/>
+        <actor a="0.0" aid="18" c="false" group="3" id="2" name="Enemy 18" sx="0.2" sy="0.2" x="30" y="202" z="3"/>
+        <actor a="0.0" aid="19" c="false" group="3" id="2" name="Enemy 19" sx="0.2" sy="0.2" x="412" y="-47" z="3"/>
+        <actor a="0.0" aid="22" c="false" group="3" id="2" name="Enemy 22" sx="0.2" sy="0.2" x="365" y="201" z="3"/>
+        <actor a="0.0" aid="23" c="false" group="4" id="8" name="Diamond 23" sx="1.0" sy="1.0" x="589" y="424" z="3"/>
+        <actor a="0.0" aid="24" c="false" group="4" id="8" name="Diamond 24" sx="1.0" sy="1.0" x="576" y="321" z="3"/>
+        <actor a="0.0" aid="25" c="false" group="4" id="8" name="Diamond 25" sx="1.0" sy="1.0" x="372" y="310" z="3"/>
+        <actor a="0.0" aid="26" c="false" group="4" id="8" name="Diamond 26" sx="1.0" sy="1.0" x="245" y="386" z="3"/>
+        <actor a="0.0" aid="27" c="false" group="4" id="8" name="Diamond 27" sx="1.0" sy="1.0" x="100" y="421" z="3"/>
+        <actor a="0.0" aid="28" c="false" group="4" id="8" name="Diamond 28" sx="1.0" sy="1.0" x="23" y="274" z="3"/>
+        <actor a="0.0" aid="29" c="false" group="4" id="8" name="Diamond 29" sx="1.0" sy="1.0" x="51" y="79" z="3"/>
+        <actor a="0.0" aid="30" c="false" group="4" id="8" name="Diamond 30" sx="1.0" sy="1.0" x="375" y="100" z="3"/>
+        <actor a="0.0" aid="31" c="false" group="4" id="8" name="Diamond 31" sx="1.0" sy="1.0" x="560" y="50" z="3"/>
     </actors>
     <snippets/>
     <terrain/>
