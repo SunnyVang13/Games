@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="4" fixedrot="true" fric="0.2" gid="3" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Blast" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="35" id="7" name="Blast" shared="false" width="35">
+        <anim across="2" down="2" durations="100,100,100,100" height="70" id="0" loop="true" name="Animation 0" numframes="4" originx="17" originy="17" sync="false" version="2" width="70">
+            <poly data="4,0,0,35,0,35,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="15" id="9" name="Diamond" shared="false" width="20">
+        <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="45" id="0" loop="true" name="Animation 0" numframes="10" originx="10" originy="7" sync="false" version="2" width="80">
+            <poly data="4,0,0,20,0,20,15,0,15" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="3" id="2" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Enemy" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="3" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="320" id="3" name="Enemy" shared="false" width="280">
+        <anim across="2" down="1" durations="100,100" height="320" id="0" loop="true" name="Idle" numframes="2" originx="140" originy="160" sync="false" version="2" width="560">
+            <poly data="4,0,0,280,0,280,320,0,320" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="7" fixedrot="true" fric="0.2" gid="4" id="8" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Gem" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="9" static="false">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="0" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Hero" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="3" defaultAnimation="3" desc="" height="78" id="1" name="Hero" shared="false" width="42">
+        <anim across="2" down="2" durations="100,100,100" height="156" id="3" loop="true" name="Idle" numframes="3" originx="21" originy="39" sync="false" version="2" width="84">
+            <poly data="4,0,0,42,0,42,78,0,78" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="78" id="4" loop="true" name="Walking Left" numframes="1" originx="21" originy="39" sync="false" version="2" width="42">
+            <poly data="4,0,0,42,0,42,78,0,78" density="0.1" fric="0.2" gid="-1000" id="0" name="Walking Left" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="78" id="5" loop="true" name="Walking Right" numframes="1" originx="21" originy="39" sync="false" version="2" width="42">
+            <poly data="4,0,0,42,0,42,78,0,78" density="0.1" fric="0.2" gid="-1000" id="0" name="Walking Right" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="156" id="6" loop="true" name="Walking Up" numframes="3" originx="21" originy="39" sync="false" version="2" width="84">
+            <poly data="4,0,0,42,0,42,78,0,78" density="0.1" fric="0.2" gid="-1000" id="0" name="Walking Up" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="2" durations="100,100,100,100,100,100" height="156" id="7" loop="true" name="Walking Down" numframes="6" originx="21" originy="39" sync="false" version="2" width="126">
+            <poly data="4,0,0,42,0,42,78,0,78" density="0.1" fric="0.2" gid="-1000" id="0" name="Walking Down" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="192" id="5" name="Stage 1" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="192" xpf="1.0" ypf="1.0"/>
+</pack>

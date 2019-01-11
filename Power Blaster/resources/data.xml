@@ -5,11 +5,11 @@
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="35" id="7" name="Blast" shared="false" width="35">
         <anim across="2" down="2" durations="100,100,100,100" height="70" id="0" loop="true" name="Animation 0" numframes="4" originx="17" originy="17" sync="false" version="2" width="70">
-            <poly data="4,0,0,35,0,35,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+            <poly data="4,0,0,35,0,35,35,0,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="15" id="9" name="Diamond" shared="false" width="20">
-        <anim across="3" down="3" durations="100,100,100,100,100,100,100,100" height="45" id="0" loop="true" name="Animation 0" numframes="8" originx="10" originy="7" sync="false" version="2" width="60">
+        <anim across="4" down="3" durations="100,100,100,100,100,100,100,100,100,100" height="45" id="0" loop="true" name="Animation 0" numframes="10" originx="10" originy="7" sync="false" version="2" width="80">
             <poly data="4,0,0,20,0,20,15,0,15" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
