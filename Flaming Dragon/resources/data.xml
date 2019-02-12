@@ -32,6 +32,14 @@
             <poly data="4,0,0,75,0,75,78,0,78" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="16" fixedrot="false" fric="0.2" gid="3" id="28" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Emerald Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="29" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="28" id="29" name="Emerald Egg" shared="false" width="20">
+        <anim across="1" down="1" durations="100" height="28" id="0" loop="true" name="Animation 0" numframes="1" originx="10" originy="14" sync="false" version="2" width="20">
+            <poly data="4,0,0,20,0,20,28,0,28" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="40" id="3" name="Enemy" shared="false" width="40">
         <anim across="2" down="1" durations="100,100" height="40" id="0" loop="true" name="Idle" numframes="2" originx="20" originy="20" sync="false" version="2" width="80">
             <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
@@ -45,6 +53,14 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="4" fixedrot="true" fric="0.2" gid="3" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Flaming Dragon Attack" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="false">
         <snippets/>
     </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="3" id="30" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Flaming Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="31" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="28" id="31" name="Flaming Egg" shared="false" width="21">
+        <anim across="1" down="1" durations="100" height="28" id="0" loop="true" name="Animation 0" numframes="1" originx="10" originy="14" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,28,0,28" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="3" defaultAnimation="3" desc="" height="78" id="1" name="Hero" shared="false" width="42">
         <anim across="2" down="2" durations="100,100,100" height="156" id="3" loop="true" name="Idle" numframes="3" originx="21" originy="39" sync="false" version="2" width="84">
             <poly data="4,0,0,42,0,42,78,0,78" density="0.1" fric="0.2" gid="-1000" id="0" name="Idle" rest="0.0" sensor="false"/>
@@ -198,8 +214,16 @@
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="12" name="Spawner" shared="false" width="16">
-        <anim across="1" down="1" durations="100" height="16" id="0" loop="true" name="Animation 0" numframes="1" originx="10" originy="10" sync="false" version="2" width="16">
+        <anim across="1" down="1" durations="100" height="1" id="0" loop="true" name="Animation 0" numframes="1" originx="10" originy="10" sync="false" version="2" width="1">
             <poly data="4,0,0,32,0,32,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="3" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Thunder Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="28" id="27" name="Thunder Egg" shared="false" width="21">
+        <anim across="1" down="1" durations="100" height="28" id="0" loop="true" name="Animation 0" numframes="1" originx="10" originy="14" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,28,0,28" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
 </pack>
