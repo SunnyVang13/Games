@@ -40,7 +40,8 @@
         <blocks/>
         <events>
             <event displayName="Actor - Type" enabled="true" id="1" name="event-collide-actortotype" order="1" repeats="true"/>
-            <event displayName="After N secs" enabled="true" id="2" name="event-delay" order="3" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="2" name="event-delay" order="4" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_5_5_FireBullet" classname="scripts.Design_5_5_FireBullet" desc="Spawn bullets from the actor's position." description="Spawn bullets from the actor's position." design="true" drawOrder="0" id="5" name="Fire Bullet" oid="-1" package="scripts" shared="false" type="actor">
