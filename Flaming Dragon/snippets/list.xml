@@ -12,8 +12,9 @@
         <blocks/>
         <events>
             <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="3" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="3" name="step" order="2" repeats="true"/>
+            <event displayName="Keyboard" enabled="true" id="2" name="event-key-press-release" order="7" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="3" name="step" order="5" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="4" name="event-collide-actortotype" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="2" attachedevent="true" class="scripts.ActorEvents_2" classname="scripts.ActorEvents_2" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" name="ActorEvents_2" oid="-1" package="scripts." shared="false" type="actor">
@@ -112,7 +113,6 @@
     <snippet actorid="11" attachedevent="true" class="scripts.ActorEvents_11" classname="scripts.ActorEvents_11" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="8" name="ActorEvents_11" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="1" repeats="true"/>
             <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
         </events>
     </snippet>
@@ -155,5 +155,11 @@
     <snippet actorid="30" attachedevent="true" class="scripts.ActorEvents_30" classname="scripts.ActorEvents_30" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="17" name="ActorEvents_30" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet actorid="32" attachedevent="true" class="scripts.ActorEvents_32" classname="scripts.ActorEvents_32" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="18" name="ActorEvents_32" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Every N secs" enabled="true" id="1" name="event-periodic" order="1" repeats="true"/>
+        </events>
     </snippet>
 </pack>

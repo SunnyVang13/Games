@@ -2,23 +2,23 @@
 <scene depth="2" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="45.0" height="480" id="0" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
-        <layer blendMode="normal" color="0,255,0" id="4" locked="false" name="Tiles/Background" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="128,128,128" id="4" locked="false" name="Tiles/Background" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="128,128,128" id="3" locked="false" name="Character" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
     <regions>
-        <region b="64" g="64" h="5" id="0" name="Region 0" pts="4,6.0,0.0,6.0,5.0,0.0,5.0,0.0,0.0" r="64" type="box" w="6" x="-174" y="218"/>
+        <region b="64" g="64" h="5" id="0" name="Region 0" pts="4,0.0,0.0,0.0,5.0,6.0,5.0,6.0,0.0" r="64" type="box" w="6" x="-174" y="218"/>
     </regions>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="38" c="false" group="3" id="11" name="Spawner 38" sx="1.0" sy="1.0" x="38" y="29" z="3"/>
-        <actor a="0.0" aid="39" c="false" group="3" id="11" name="Spawner 39" sx="1.0" sy="1.0" x="557" y="34" z="3"/>
-        <actor a="0.0" aid="20" c="false" group="0" id="0" name="Hero 20" sx="1.0" sy="1.0" x="290" y="327" z="3"/>
+        <actor a="0.0" aid="38" c="false" group="3" id="11" name="Spawner 38" sx="1.0" sy="1.0" x="51" y="397" z="3"/>
+        <actor a="0.0" aid="40" c="false" group="0" id="0" name="Hero FLAME 40" sx="1.0" sy="1.0" x="292" y="309" z="3"/>
         <actor a="0.0" aid="25" c="false" group="4" id="8" name="Diamonds 25" sx="1.0" sy="1.0" x="596" y="27" z="3"/>
+        <actor a="0.0" aid="41" c="false" group="4" id="16" name="Power Up Gem 41" sx="1.0" sy="1.0" x="303" y="428" z="3"/>
         <actor a="0.0" aid="26" c="false" group="4" id="8" name="Diamonds 26" sx="1.0" sy="1.0" x="595" y="438" z="3"/>
+        <actor a="0.0" aid="42" c="false" group="3" id="32" name="Bullder Spawner 42" sx="1.0" sy="1.0" x="557" y="398" z="3"/>
         <actor a="0.0" aid="27" c="false" group="4" id="8" name="Diamonds 27" sx="1.0" sy="1.0" x="26" y="432" z="3"/>
         <actor a="0.0" aid="28" c="false" group="4" id="8" name="Diamonds 28" sx="1.0" sy="1.0" x="21" y="27" z="3"/>
-        <actor a="0.0" aid="31" c="false" group="3" id="20" name="Ice Fire Dragon 31" sx="1.0" sy="1.0" x="266" y="21" z="3"/>
     </actors>
     <snippets/>
     <terrain>
