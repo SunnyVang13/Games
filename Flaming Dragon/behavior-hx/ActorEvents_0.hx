@@ -40,7 +40,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -70,35 +69,71 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_0 extends SceneScript
+class ActorEvents_0 extends ActorScript
 {
-	public var _VictoryCounter:Float;
-	public var _Win:Bool;
+	public var _Grounded:Bool;
+	public var _BulletSpeed:Float;
+	public var _HealthPoints:Float;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("Victory Counter", "_VictoryCounter");
-		_VictoryCounter = 0.0;
-		nameMap.set("Win?", "_Win");
-		_Win = false;
+		super(actor);
+		nameMap.set("Grounded?", "_Grounded");
+		_Grounded = false;
+		nameMap.set("Bullet Speed", "_BulletSpeed");
+		_BulletSpeed = 35.0;
+		nameMap.set("Health Points", "_HealthPoints");
+		_HealthPoints = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		playSound(getSound(8));
-		
-		/* ======================= Member of Group ======================== */
-		addWhenTypeGroupKilledListener(getActorGroup(4), function(eventActor:Actor, list:Array<Dynamic>):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				_VictoryCounter += 1;
-				propertyChanged("_VictoryCounter", _VictoryCounter);
+				if(isKeyDown("left"))
+				{
+					actor.setXVelocity(-10);
+					actor.setAnimation("" + "Walking Left");
+				}
+				else if(isKeyDown("right"))
+				{
+					actor.setXVelocity(10);
+					actor.setAnimation("" + "Walking Right");
+				}
+				else
+				{
+					actor.setXVelocity(0);
+				}
+				if(isKeyDown("down"))
+				{
+					actor.setYVelocity(10);
+					actor.setAnimation("" + "Walking Down");
+				}
+				else if(isKeyDown("up"))
+				{
+					actor.setYVelocity(-10);
+					actor.setAnimation("" + "Walking Up");
+				}
+				else
+				{
+					actor.setYVelocity(0);
+				}
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(16), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				actor.setAnimation("" + "Power Up");
+				recycleActor(event.otherActor);
 			}
 		});
 		
@@ -107,23 +142,32 @@ class SceneEvents_0 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				if((_VictoryCounter == 5))
-				{
-					_Win = true;
-					propertyChanged("_Win", _Win);
-				}
+				Engine.engine.setGameAttribute("Hero X", actor.getX());
+				Engine.engine.setGameAttribute("Hero Y", actor.getY());
 			}
 		});
 		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("action1", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled)
+			if(wrapper.enabled && pressed)
 			{
-				g.setFont(getFont(9));
-				if(_Win)
+				createRecycledActor(getActorType(6), actor.getX(), actor.getY(), Script.FRONT);
+				if((actor.getAnimation() == "Walking Down"))
 				{
-					g.drawString("" + "YOU WIN!", 240, 211);
+					getLastCreatedActor().setYVelocity(_BulletSpeed);
+				}
+				else if((actor.getAnimation() == "Walking Up"))
+				{
+					getLastCreatedActor().setYVelocity(-(_BulletSpeed));
+				}
+				else if((actor.getAnimation() == "Walking Right"))
+				{
+					getLastCreatedActor().setXVelocity(_BulletSpeed);
+				}
+				else
+				{
+					getLastCreatedActor().setXVelocity(-(_BulletSpeed));
 				}
 			}
 		});

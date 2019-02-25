@@ -194,7 +194,11 @@
     <group eventID="4" id="0">
         <event-collide-actortotype comment="false" x="15" y="15">
             <group eventID="4" id="-1">
-                <die comment="false" x="26" y="47">
+                <setanim comment="false" x="26" y="47">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Power Up"/>
+                </setanim>
+                <die comment="false" x="26" y="74">
                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                 </die>
             </group>

@@ -11,13 +11,13 @@
     </regions>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="38" c="false" group="3" id="11" name="Spawner 38" sx="1.0" sy="1.0" x="51" y="397" z="3"/>
-        <actor a="0.0" aid="40" c="false" group="0" id="0" name="Hero FLAME 40" sx="1.0" sy="1.0" x="292" y="309" z="3"/>
+        <actor a="0.0" aid="40" c="false" group="0" id="0" name="Hero FLAME 40" sx="1.0" sy="1.0" x="294" y="26" z="3"/>
         <actor a="0.0" aid="25" c="false" group="4" id="8" name="Diamonds 25" sx="1.0" sy="1.0" x="596" y="27" z="3"/>
         <actor a="0.0" aid="41" c="false" group="4" id="16" name="Power Up Gem 41" sx="1.0" sy="1.0" x="303" y="428" z="3"/>
         <actor a="0.0" aid="26" c="false" group="4" id="8" name="Diamonds 26" sx="1.0" sy="1.0" x="595" y="438" z="3"/>
-        <actor a="0.0" aid="42" c="false" group="3" id="32" name="Bullder Spawner 42" sx="1.0" sy="1.0" x="557" y="398" z="3"/>
+        <actor a="0.0" aid="42" c="false" group="3" id="11" name="Skull Spawner 42" sx="1.0" sy="1.0" x="54" y="391" z="3"/>
         <actor a="0.0" aid="27" c="false" group="4" id="8" name="Diamonds 27" sx="1.0" sy="1.0" x="26" y="432" z="3"/>
+        <actor a="0.0" aid="43" c="false" group="3" id="32" name="Bullder Spawner 43" sx="1.0" sy="1.0" x="549" y="394" z="3"/>
         <actor a="0.0" aid="28" c="false" group="4" id="8" name="Diamonds 28" sx="1.0" sy="1.0" x="21" y="27" z="3"/>
     </actors>
     <snippets/>
