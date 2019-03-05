@@ -69,20 +69,21 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_0 extends ActorScript
+class ActorEvents_2 extends ActorScript
 {
-	public var _Grounded:Bool;
-	public var _BulletSpeed:Float;
 	public var _HealthPoints:Float;
+	
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_Hit():Void
+	{
+		_HealthPoints -= 1;
+		propertyChanged("_HealthPoints", _HealthPoints);
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Grounded?", "_Grounded");
-		_Grounded = false;
-		nameMap.set("Bullet Speed", "_BulletSpeed");
-		_BulletSpeed = 35.0;
 		nameMap.set("Health Points", "_HealthPoints");
 		_HealthPoints = 0.0;
 		
@@ -91,49 +92,16 @@ class ActorEvents_0 extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		_HealthPoints = asNumber(3);
+		propertyChanged("_HealthPoints", _HealthPoints);
+		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if(isKeyDown("left"))
-				{
-					actor.setXVelocity(-10);
-					actor.setAnimation("" + "Walking Left");
-				}
-				else if(isKeyDown("right"))
-				{
-					actor.setXVelocity(10);
-					actor.setAnimation("" + "Walking Right");
-				}
-				else
-				{
-					actor.setXVelocity(0);
-				}
-				if(isKeyDown("down"))
-				{
-					actor.setYVelocity(10);
-					actor.setAnimation("" + "Walking Down");
-				}
-				else if(isKeyDown("up"))
-				{
-					actor.setYVelocity(-10);
-					actor.setAnimation("" + "Walking Up");
-				}
-				else
-				{
-					actor.setYVelocity(0);
-				}
-			}
-		});
-		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && sameAsAny(getActorType(16), event.otherActor.getType(),event.otherActor.getGroup()))
-			{
-				actor.setAnimation("" + "Power Up");
-				recycleActor(event.otherActor);
+				actor.push((Engine.engine.getGameAttribute("Hero X") - actor.getX()), (Engine.engine.getGameAttribute("Hero Y") - actor.getY()), 1);
 			}
 		});
 		
@@ -142,32 +110,10 @@ class ActorEvents_0 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				Engine.engine.setGameAttribute("Hero X", actor.getX());
-				Engine.engine.setGameAttribute("Hero Y", actor.getY());
-			}
-		});
-		
-		/* =========================== Keyboard =========================== */
-		addKeyStateListener("action1", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && pressed)
-			{
-				createRecycledActor(getActorType(6), actor.getX(), actor.getY(), Script.FRONT);
-				if((actor.getAnimation() == "Walking Down"))
+				if((_HealthPoints <= 0))
 				{
-					getLastCreatedActor().setYVelocity(_BulletSpeed);
-				}
-				else if((actor.getAnimation() == "Walking Up"))
-				{
-					getLastCreatedActor().setYVelocity(-(_BulletSpeed));
-				}
-				else if((actor.getAnimation() == "Walking Right"))
-				{
-					getLastCreatedActor().setXVelocity(_BulletSpeed);
-				}
-				else
-				{
-					getLastCreatedActor().setXVelocity(-(_BulletSpeed));
+					recycleActor(actor);
+					Engine.engine.setGameAttribute("Enemies Killed", (Engine.engine.getGameAttribute("Enemies Killed") + 1));
 				}
 			}
 		});

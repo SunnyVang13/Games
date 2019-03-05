@@ -21,6 +21,7 @@
             <poly data="4,0,0,20,0,20,15,0,15" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="37" loop="true" name="Diamond Collecting" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="7" fixedrot="true" fric="0.2" gid="4" id="8" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Diamonds" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="9" static="false">
         <snippets/>
     </actor>
@@ -32,6 +33,12 @@
             <poly data="4,0,0,20,0,20,28,0,28" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <tileset across="2" atlasID="0" desc="" down="2" id="36" name="Dungeon" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="3" id="3" order="-1"/>
+    </tileset>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="13" fixedrot="false" fric="0.2" gid="3" id="22" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Emerald Dragon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="23" static="true">
         <snippets/>
     </actor>
@@ -61,7 +68,7 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="0" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Flamez" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
         <snippets/>
     </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="34" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Flamez the Dragon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="35" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="19" fixedrot="false" fric="0.2" gid="3" id="34" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Flamez the Dragon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="35" static="true">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="98" id="35" name="Flamez the Dragon" shared="false" width="80">

@@ -6,7 +6,11 @@
                 <die comment="false" x="26" y="47">
                     <ACTOR eid="this" id="0"/>
                 </die>
-                <set-game-val-6 comment="false" x="26" y="74">
+                <play-sound4 comment="false" x="26" y="74">
+                    <int id="0" val="0"/>
+                    <sound eid="37" id="1"/>
+                </play-sound4>
+                <set-game-val-6 comment="false" x="26" y="101">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-game-val-6 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>

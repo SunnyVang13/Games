@@ -29,9 +29,9 @@
     <group eventID="4" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="4" id="-1">
-                <set-val-2-1 comment="false" x="26" y="40">
+                <set-val-9-1 comment="false" x="26" y="40">
                     <int id="0" val="3"/>
-                </set-val-2-1>
+                </set-val-9-1>
             </group>
         </init>
     </group>

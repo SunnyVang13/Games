@@ -69,26 +69,52 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_8 extends ActorScript
+class ActorEvents_13 extends ActorScript
 {
+	public var _HealthPoints:Float;
+	
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_Hit():Void
+	{
+		_HealthPoints -= 1;
+		propertyChanged("_HealthPoints", _HealthPoints);
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Health Points", "_HealthPoints");
+		_HealthPoints = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		/* ======================== When Creating ========================= */
+		_HealthPoints = asNumber(3);
+		propertyChanged("_HealthPoints", _HealthPoints);
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && sameAsAny(getActorType(0), event.otherActor.getType(),event.otherActor.getGroup()))
+			if(wrapper.enabled)
 			{
-				recycleActor(actor);
-				Engine.engine.setGameAttribute("Diamonds Collected", (Engine.engine.getGameAttribute("Diamonds Collected") + 1));
+				actor.push((Engine.engine.getGameAttribute("Hero X") - actor.getX()), (Engine.engine.getGameAttribute("Hero Y") - actor.getY()), 1);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_HealthPoints <= 0))
+				{
+					recycleActor(actor);
+					Engine.engine.setGameAttribute("Enemies Killed", (Engine.engine.getGameAttribute("Enemies Killed") + 1));
+				}
 			}
 		});
 		
