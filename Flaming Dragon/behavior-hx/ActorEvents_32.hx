@@ -71,11 +71,14 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_32 extends ActorScript
 {
+	public var _HealthPoints:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Health Points", "_HealthPoints");
+		_HealthPoints = 0.0;
 		
 	}
 	

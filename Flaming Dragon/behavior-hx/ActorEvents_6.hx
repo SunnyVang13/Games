@@ -111,6 +111,15 @@ class ActorEvents_6 extends ActorScript
 			}
 		}, actor);
 		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				actor.killSelfAfterLeavingScreen();
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

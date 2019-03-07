@@ -2,13 +2,13 @@
 <pack>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="25" id="7" name="Blast" shared="false" width="25">
         <anim across="2" down="2" durations="100,100,100,100" height="50" id="0" loop="true" name="Animation 0" numframes="4" originx="12" originy="12" sync="false" version="2" width="50">
-            <poly data="4,0,0,25,0,25,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,25,0,25,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.2" gid="3" id="2" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Bullder Monster" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="3" static="false">
         <snippets/>
     </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="3" id="32" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bullder Spawner" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="33" static="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="18" fixedrot="true" fric="0.2" gid="3" id="32" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Bullder Spawner" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="33" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="60" id="33" name="Bullder Spawner" shared="false" width="40">
@@ -25,7 +25,7 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="7" fixedrot="true" fric="0.2" gid="4" id="8" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Diamonds" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="9" static="false">
         <snippets/>
     </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="11" fixedrot="false" fric="0.2" gid="3" id="18" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Dragon Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="19" static="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="11" fixedrot="false" fric="0.2" gid="5" id="18" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Dragon Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="19" static="true">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="28" id="19" name="Dragon Egg" shared="false" width="20">
@@ -47,7 +47,7 @@
             <poly data="4,0,0,75,0,75,78,0,78" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="16" fixedrot="false" fric="0.2" gid="3" id="28" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Emerald Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="29" static="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="16" fixedrot="false" fric="0.2" gid="5" id="28" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Emerald Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="29" static="true">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="28" id="29" name="Emerald Egg" shared="false" width="20">
@@ -65,6 +65,7 @@
             <poly data="4,0,0,38,0,38,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="38" loop="true" name="Fire" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="0" id="0" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Flamez" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
         <snippets/>
     </actor>
@@ -79,7 +80,7 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="4" fixedrot="true" fric="0.2" gid="3" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Flaming Dragon Attack" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="false">
         <snippets/>
     </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="3" id="30" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Flaming Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="31" static="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="5" id="30" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Flaming Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="31" static="true">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="28" id="31" name="Flaming Egg" shared="false" width="21">
@@ -244,7 +245,7 @@
             <poly data="4,0,0,40,0,40,60,0,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="3" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Thunder Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="5" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Thunder Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="true">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="28" id="27" name="Thunder Egg" shared="false" width="21">

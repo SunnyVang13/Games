@@ -78,6 +78,11 @@ class ActorEvents_13 extends ActorScript
 	{
 		_HealthPoints -= 1;
 		propertyChanged("_HealthPoints", _HealthPoints);
+		actor.setFilter([createNegativeFilter()]);
+		runLater(1000 * .1, function(timeTask:TimedTask):Void
+		{
+			actor.clearFilters();
+		}, actor);
 	}
 	
 	
