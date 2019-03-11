@@ -1,27 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <draw comment="false" x="15" y="15">
+        <draw comment="false" x="8" y="12">
             <group eventID="1" id="-1">
-                <draw-text comment="false" x="26" y="40">
+                <draw-text comment="false" x="19" y="37">
+                    <int id="0" val="Press space bar to shoot!"/>
+                    <int id="1" val="25"/>
+                    <int id="2" val="380"/>
+                </draw-text>
+                <draw-text comment="false" x="19" y="57">
+                    <int id="0" val="Move with arrow keys"/>
+                    <int id="1" val="25"/>
+                    <int id="2" val="400"/>
+                </draw-text>
+                <draw-text comment="false" x="19" y="77">
                     <int id="0" val="Enemies Killed:"/>
-                    <int id="1" val="10"/>
-                    <int id="2" val="0"/>
+                    <int id="1" val="25"/>
+                    <int id="2" val="15"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="60">
+                <draw-text comment="false" x="19" y="97">
                     <get-game-val-5 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="155"/>
-                    <int id="2" val=".5"/>
+                    <int id="1" val="170"/>
+                    <int id="2" val="15.5"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="85">
+                <draw-text comment="false" x="19" y="122">
                     <int id="0" val="Diamonds Collected:"/>
-                    <int id="1" val="418"/>
-                    <int id="2" val="0"/>
+                    <int id="1" val="400"/>
+                    <int id="2" val="15"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="105">
+                <draw-text comment="false" x="19" y="142">
                     <get-game-val-6 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="616"/>
-                    <int id="2" val=".5"/>
+                    <int id="1" val="600"/>
+                    <int id="2" val="15.5"/>
                 </draw-text>
             </group>
         </draw>

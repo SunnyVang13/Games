@@ -40,6 +40,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,52 +70,30 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_11 extends ActorScript
+class SceneEvents_0 extends SceneScript
 {
-	public var _HealthPoints:Float;
 	
-	/* ========================= Custom Event ========================= */
-	public function _customEvent_Hit():Void
+	
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		_HealthPoints -= 1;
-		propertyChanged("_HealthPoints", _HealthPoints);
-	}
-	
-	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
-	{
-		super(actor);
-		nameMap.set("Health Points", "_HealthPoints");
-		_HealthPoints = 0.0;
+		super();
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		_HealthPoints = asNumber(8);
-		propertyChanged("_HealthPoints", _HealthPoints);
-		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 5, function(timeTask:TimedTask):Void
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				createRecycledActor(getActorType(13), actor.getX(), actor.getY(), Script.MIDDLE);
-			}
-		}, actor);
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((_HealthPoints <= 0))
-				{
-					recycleActor(actor);
-					Engine.engine.setGameAttribute("Enemies Killed", (Engine.engine.getGameAttribute("Enemies Killed") + 1));
-				}
+				g.drawString("" + "Press space bar to shoot!", 25, 380);
+				g.drawString("" + "Move with arrow keys", 25, 400);
+				g.drawString("" + "Enemies Killed:", 25, 15);
+				g.drawString("" + Engine.engine.getGameAttribute("Enemies Killed"), 170, 15.5);
+				g.drawString("" + "Diamonds Collected:", 400, 15);
+				g.drawString("" + Engine.engine.getGameAttribute("Diamonds Collected"), 600, 15.5);
 			}
 		});
 		
