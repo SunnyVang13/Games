@@ -82,17 +82,6 @@ class ActorEvents_8 extends ActorScript
 	override public function init()
 	{
 		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && sameAsAny(getActorType(0), event.otherActor.getType(),event.otherActor.getGroup()))
-			{
-				recycleActor(actor);
-				playSound(getSound(37));
-				Engine.engine.setGameAttribute("Diamonds Collected", (Engine.engine.getGameAttribute("Diamonds Collected") + 1));
-			}
-		});
-		
 	}
 	
 	override public function forwardMessage(msg:String)

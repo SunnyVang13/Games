@@ -3,35 +3,43 @@
     <group eventID="1" id="0">
         <draw comment="false" x="8" y="12">
             <group eventID="1" id="-1">
-                <draw-text comment="false" x="19" y="37">
-                    <int id="0" val="Press space bar to shoot!"/>
+                <set-font-new comment="false" x="19" y="37">
+                    <font eid="41" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="19" y="64">
+                    <int id="0" val="Lives:"/>
                     <int id="1" val="25"/>
-                    <int id="2" val="380"/>
+                    <int id="2" val="20"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="57">
-                    <int id="0" val="Move with arrow keys"/>
-                    <int id="1" val="25"/>
-                    <int id="2" val="400"/>
-                </draw-text>
-                <draw-text comment="false" x="19" y="77">
+                <draw-text comment="false" x="19" y="84">
                     <int id="0" val="Enemies Killed:"/>
-                    <int id="1" val="25"/>
-                    <int id="2" val="15"/>
+                    <int id="1" val="362"/>
+                    <int id="2" val="20"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="97">
+                <draw-text comment="false" x="19" y="104">
                     <get-game-val-5 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="170"/>
-                    <int id="2" val="15.5"/>
+                    <int id="1" val="542"/>
+                    <int id="2" val="20.5"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="122">
+                <draw-text comment="false" x="19" y="129">
                     <int id="0" val="Diamonds Collected:"/>
-                    <int id="1" val="400"/>
-                    <int id="2" val="15"/>
+                    <int id="1" val="362"/>
+                    <int id="2" val="35"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="142">
+                <draw-text comment="false" x="19" y="149">
                     <get-game-val-6 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="600"/>
-                    <int id="2" val="15.5"/>
+                    <int id="2" val="35.5"/>
+                </draw-text>
+                <draw-text comment="false" x="19" y="174">
+                    <int id="0" val="Press space bar to shoot!"/>
+                    <int id="1" val="25"/>
+                    <int id="2" val="415"/>
+                </draw-text>
+                <draw-text comment="false" x="19" y="194">
+                    <int id="0" val="Move with arrow keys"/>
+                    <int id="1" val="25"/>
+                    <int id="2" val="435"/>
                 </draw-text>
             </group>
         </draw>

@@ -165,6 +165,26 @@ class ActorEvents_0 extends ActorScript
 		/* ======================== Actor of Type ========================= */
 		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 		{
+			if(wrapper.enabled && sameAsAny(getActorType(8), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				recycleActor(event.otherActor);
+				playSound(getSound(37));
+				Engine.engine.setGameAttribute("Diamonds Collected", (Engine.engine.getGameAttribute("Diamonds Collected") + 1));
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(38), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				recycleActor(event.otherActor);
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
 			if(wrapper.enabled && sameAsAny(getActorType(16), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
 				recycleActor(event.otherActor);
