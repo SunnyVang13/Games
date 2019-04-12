@@ -101,9 +101,24 @@ class ActorEvents_11 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				createRecycledActor(getActorType(13), actor.getX(), actor.getY(), Script.MIDDLE);
+				if(!(Engine.engine.getGameAttribute("Game Over")))
+				{
+					createRecycledActor(getActorType(13), actor.getX(), actor.getY(), Script.MIDDLE);
+				}
 			}
 		}, actor);
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((Engine.engine.getGameAttribute("Game Over") && true))
+				{
+					return;
+				}
+			}
+		});
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void

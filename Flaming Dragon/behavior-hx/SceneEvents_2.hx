@@ -40,6 +40,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,45 +70,18 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_32 extends ActorScript
+class SceneEvents_2 extends SceneScript
 {
-	public var _HealthPoints:Float;
 	
 	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
-		nameMap.set("Health Points", "_HealthPoints");
-		_HealthPoints = 0.0;
+		super();
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 5, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(!(Engine.engine.getGameAttribute("Game Over")))
-				{
-					createRecycledActor(getActorType(2), actor.getX(), actor.getY(), Script.MIDDLE);
-				}
-			}
-		}, actor);
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((Engine.engine.getGameAttribute("Game Over") && true))
-				{
-					return;
-				}
-			}
-		});
 		
 	}
 	

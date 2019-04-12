@@ -69,45 +69,18 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_32 extends ActorScript
+class ActorEvents_42 extends ActorScript
 {
-	public var _HealthPoints:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Health Points", "_HealthPoints");
-		_HealthPoints = 0.0;
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 5, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(!(Engine.engine.getGameAttribute("Game Over")))
-				{
-					createRecycledActor(getActorType(2), actor.getX(), actor.getY(), Script.MIDDLE);
-				}
-			}
-		}, actor);
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((Engine.engine.getGameAttribute("Game Over") && true))
-				{
-					return;
-				}
-			}
-		});
 		
 	}
 	

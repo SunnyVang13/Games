@@ -69,9 +69,22 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_32 extends ActorScript
+class ActorEvents_13 extends ActorScript
 {
 	public var _HealthPoints:Float;
+	public var _Drop:Float;
+	
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_Hit():Void
+	{
+		_HealthPoints -= 1;
+		propertyChanged("_HealthPoints", _HealthPoints);
+		actor.setFilter([createNegativeFilter()]);
+		runLater(1000 * .1, function(timeTask:TimedTask):Void
+		{
+			actor.clearFilters();
+		}, actor);
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -79,23 +92,17 @@ class ActorEvents_32 extends ActorScript
 		super(actor);
 		nameMap.set("Health Points", "_HealthPoints");
 		_HealthPoints = 0.0;
+		nameMap.set("Drop", "_Drop");
+		_Drop = 0.0;
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 5, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				if(!(Engine.engine.getGameAttribute("Game Over")))
-				{
-					createRecycledActor(getActorType(2), actor.getX(), actor.getY(), Script.MIDDLE);
-				}
-			}
-		}, actor);
+		/* ======================== When Creating ========================= */
+		_HealthPoints = asNumber(3);
+		propertyChanged("_HealthPoints", _HealthPoints);
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
@@ -105,6 +112,50 @@ class ActorEvents_32 extends ActorScript
 				if((Engine.engine.getGameAttribute("Game Over") && true))
 				{
 					return;
+				}
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				actor.push((Engine.engine.getGameAttribute("Hero X") - actor.getX()), (Engine.engine.getGameAttribute("Hero Y") - actor.getY()), 1);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(!(Engine.engine.getGameAttribute("Game Over")))
+				{
+					if((_HealthPoints <= 0))
+					{
+						_Drop = asNumber(randomInt(Math.floor(1), Math.floor(10)));
+						propertyChanged("_Drop", _Drop);
+						Engine.engine.setGameAttribute("Debug", ("" + _Drop));
+					}
+					if((_Drop <= 5))
+					{
+						return;
+					}
+					else if(((2 < _Drop) && (_Drop <= 0)))
+					{
+						createRecycledActor(getActorType(16), actor.getX(), actor.getY(), Script.FRONT);
+					}
+					else if(((2 < _Drop) && (_Drop <= 4)))
+					{
+						createRecycledActor(getActorType(38), actor.getX(), actor.getY(), Script.FRONT);
+					}
+					else if(((4 < _Drop) && (_Drop <= 10)))
+					{
+						createRecycledActor(getActorType(8), actor.getX(), actor.getY(), Script.FRONT);
+					}
+					Engine.engine.setGameAttribute("Enemies Killed", (Engine.engine.getGameAttribute("Enemies Killed") + 1));
+					recycleActor(actor);
 				}
 			}
 		});
