@@ -1,56 +1,61 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <draw comment="false" x="8" y="12">
+        <draw comment="false" x="28" y="13">
             <group eventID="1" id="-1">
-                <set-font-new comment="false" x="19" y="37">
+                <set-font-new comment="false" x="39" y="38">
                     <font eid="41" id="0"/>
                 </set-font-new>
-                <draw-text comment="false" x="19" y="64">
+                <draw-text comment="false" x="39" y="65">
                     <int id="0" val="Lives:"/>
                     <int id="1" val="25"/>
                     <int id="2" val="20"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="84">
+                <draw-text comment="false" x="39" y="85">
                     <int id="0" val="Enemies Killed:"/>
                     <int id="1" val="362"/>
                     <int id="2" val="20"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="104">
+                <draw-text comment="false" x="39" y="105">
                     <get-game-val-5 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="542"/>
                     <int id="2" val="20.5"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="129">
+                <draw-text comment="false" x="39" y="130">
                     <int id="0" val="Diamonds Collected:"/>
                     <int id="1" val="362"/>
                     <int id="2" val="35"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="149">
+                <draw-text comment="false" x="39" y="150">
                     <get-game-val-6 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="600"/>
                     <int id="2" val="35.5"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="174">
+                <draw-text comment="false" x="39" y="175">
                     <int id="0" val="Press space bar to shoot!"/>
                     <int id="1" val="25"/>
                     <int id="2" val="415"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="194">
+                <draw-text comment="false" x="39" y="195">
                     <int id="0" val="Move with arrow keys"/>
                     <int id="1" val="25"/>
                     <int id="2" val="435"/>
                 </draw-text>
-                <draw-text comment="false" x="19" y="214">
+                <draw-text comment="false" x="39" y="215">
                     <int id="0" val="Level 1"/>
                     <int id="1" val="530"/>
                     <int id="2" val="435"/>
                 </draw-text>
-                <if comment="false" x="19" y="234">
+                <if comment="false" x="39" y="235">
                     <group eventID="1" id="-1">
-                        <draw-text comment="false" x="30" y="264">
+                        <draw-text comment="false" x="50" y="265">
                             <int id="0" val="You Win!"/>
                             <int id="1" val="264"/>
+                            <int id="2" val="210"/>
+                        </draw-text>
+                        <draw-text comment="false" x="50" y="285">
+                            <int id="0" val="Enter through the door to continue &amp;gt;&amp;gt;&amp;gt;"/>
+                            <int id="1" val="115"/>
                             <int id="2" val="240"/>
                         </draw-text>
                     </group>
@@ -113,4 +118,18 @@
         </init>
     </group>
     <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <scene-change-through comment="false" x="26" y="47">
+                    <scene eid="1" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
+            <ACTOR eid="40" id="0"/>
+            <actortype eid="44" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>

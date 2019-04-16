@@ -14,7 +14,6 @@
         <actor a="0.0" aid="40" c="false" group="0" id="0" name="Hero FLAME 40" sx="1.0" sy="1.0" x="295" y="351" z="3"/>
         <actor a="0.0" aid="42" c="false" group="3" id="11" name="Skull Spawner 42" sx="1.0" sy="1.0" x="25" y="21" z="3"/>
         <actor a="0.0" aid="43" c="false" group="6" id="32" name="Bullder Spawner 43" sx="1.0" sy="1.0" x="574" y="22" z="3"/>
-        <actor a="0.0" aid="44" c="false" group="11" id="44" name="Break Door 44" sx="1.6" sy="1.6" x="847" y="327" z="4"/>
     </actors>
     <snippets/>
     <terrain>

@@ -70,18 +70,72 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_2 extends SceneScript
+class SceneEvents_0 extends SceneScript
 {
+	public var _doors:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("doors", "_doors");
+		_doors = 0.0;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("doors", 0);
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(41));
+				g.drawString("" + "Lives:", 25, 20);
+				g.drawString("" + "Enemies Killed:", 362, 20);
+				g.drawString("" + Engine.engine.getGameAttribute("Enemies Killed"), 542, 20.5);
+				g.drawString("" + "Diamonds Collected:", 362, 35);
+				g.drawString("" + Engine.engine.getGameAttribute("Diamonds Collected"), 600, 35.5);
+				g.drawString("" + "Press space bar to shoot!", 25, 415);
+				g.drawString("" + "Move with arrow keys", 25, 435);
+				g.drawString("" + "Level 1", 530, 435);
+				if((Engine.engine.getGameAttribute("Game Over") && true))
+				{
+					g.drawString("" + "You Win!", 264, 210);
+					g.drawString("" + "Enter through the door to continue >>>", 115, 240);
+				}
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((Engine.engine.getGameAttribute("Enemies Killed") >= 1))
+				{
+					Engine.engine.setGameAttribute("Game Over", true);
+				}
+				if((Engine.engine.getGameAttribute("Game Over") && (Engine.engine.getGameAttribute("doors") < 1)))
+				{
+					createRecycledActor(getActorType(44), 616, 224, Script.FRONT);
+					Engine.engine.setGameAttribute("doors", 1);
+				}
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(getActor(40), function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(44), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				switchScene(GameModel.get().scenes.get(1).getID(), null, createCrossfadeTransition(1));
+			}
+		});
 		
 	}
 	

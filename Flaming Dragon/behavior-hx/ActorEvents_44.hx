@@ -69,54 +69,18 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_20 extends ActorScript
+class ActorEvents_44 extends ActorScript
 {
-	public var _HealthPoints:Float;
-	public var _Drop:Float;
-	
-	/* ========================= Custom Event ========================= */
-	public function _customEvent_Hit():Void
-	{
-		_HealthPoints -= 1;
-		propertyChanged("_HealthPoints", _HealthPoints);
-		actor.setFilter([createGrayscaleFilter()]);
-		runLater(1000 * .1, function(timeTask:TimedTask):Void
-		{
-			actor.clearFilters();
-		}, actor);
-	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Health Points", "_HealthPoints");
-		_HealthPoints = 0.0;
-		nameMap.set("Drop", "_Drop");
-		_Drop = 0.0;
 		
 	}
 	
 	override public function init()
 	{
-		
-		/* ======================== When Creating ========================= */
-		_HealthPoints = asNumber(3);
-		propertyChanged("_HealthPoints", _HealthPoints);
-		Engine.engine.setGameAttribute("Score", 1);
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((_HealthPoints <= 0))
-				{
-					recycleActor(actor);
-					Engine.engine.setGameAttribute("Enemies Killed", 1);
-				}
-			}
-		});
 		
 	}
 	

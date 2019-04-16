@@ -83,6 +83,51 @@ class SceneEvents_1 extends SceneScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("doors", 0);
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(41));
+				g.drawString("" + "Lives:", 25, 20);
+				g.drawString("" + "Level 1 Boss", 475, 435);
+				if((Engine.engine.getGameAttribute("Game Over") && true))
+				{
+					g.drawString("" + "You Win!", 264, 210);
+					g.drawString("" + "Enter through the door to continue >>>", 115, 240);
+				}
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((Engine.engine.getGameAttribute("Enemies Killed") >= 1))
+				{
+					Engine.engine.setGameAttribute("Game Over", true);
+				}
+				if((Engine.engine.getGameAttribute("Game Over") && (Engine.engine.getGameAttribute("doors") < 1)))
+				{
+					createRecycledActor(getActorType(44), 616, 224, Script.FRONT);
+					Engine.engine.setGameAttribute("doors", 1);
+				}
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(getActor(2), function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(44), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				switchScene(GameModel.get().scenes.get(2).getID(), null, createCrossfadeTransition(1));
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

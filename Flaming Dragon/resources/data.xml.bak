@@ -5,11 +5,19 @@
             <poly data="4,0,0,25,0,25,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="25" fixedrot="false" fric="0.2" gid="3" id="46" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Blobby" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="47" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="39" id="47" name="Blobby" shared="false" width="42">
+        <anim across="3" down="3" durations="100,100,100,100,100,100,100" height="117" id="0" loop="true" name="Animation 0" numframes="7" originx="21" originy="19" sync="false" version="2" width="126">
+            <poly data="4,0,0,14,0,14,13,0,13" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="24" fixedrot="true" fric="0.2" gid="11" id="44" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Break Door" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="45" static="false">
         <snippets/>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="25" id="45" name="Break Door" shared="false" width="25">
-        <anim across="1" down="1" durations="100" height="25" id="0" loop="true" name="Break Door" numframes="1" originx="12" originy="12" sync="false" version="2" width="25">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="50" id="45" name="Break Door" shared="false" width="25">
+        <anim across="1" down="1" durations="100" height="50" id="0" loop="true" name="Break Door" numframes="1" originx="12" originy="25" sync="false" version="2" width="25">
             <poly data="4,0,0,21,0,21,21,0,21" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
@@ -124,20 +132,12 @@
             <poly data="4,0,0,58,0,58,82,0,82" density="0.1" fric="0.2" gid="-1000" id="0" name="Power Up" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="12" fixedrot="false" fric="0.2" gid="3" id="20" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Ice Fire Dragon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="21" static="true">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="12" fixedrot="true" fric="0.2" gid="8" id="20" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Ice Fire Dragon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="21" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="75" id="21" name="Ice Fire Dragon" shared="false" width="84">
         <anim across="3" down="2" durations="100,100,100,100,100" height="150" id="0" loop="true" name="Animation 0" numframes="5" originx="42" originy="37" sync="false" version="2" width="252">
             <poly data="4,0,0,84,0,84,75,0,75" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="21" fixedrot="true" fric="0.2" gid="10" id="42" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Key" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="43" static="false">
-        <snippets/>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="10" id="43" name="Key" shared="false" width="22">
-        <anim across="2" down="2" durations="100,100,100" height="20" id="0" loop="true" name="Animation 0" numframes="3" originx="11" originy="5" sync="false" version="2" width="44">
-            <poly data="4,0,0,22,0,22,10,0,10" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <tileset across="10" atlasID="0" desc="" down="10" id="15" name="Kingdoms" oid="-1" shared="false" th="32" tw="32">
@@ -242,14 +242,6 @@
         <tile collision="-1" data="" durations="100" frames="98" id="98" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="99" id="99" order="-1"/>
     </tileset>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="14" fixedrot="false" fric="0.2" gid="3" id="24" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Lightning Dragon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="25" static="true">
-        <snippets/>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="84" id="25" name="Lightning Dragon" shared="false" width="84">
-        <anim across="3" down="2" durations="100,100,100,100,100" height="168" id="0" loop="true" name="Animation 0" numframes="5" originx="42" originy="42" sync="false" version="2" width="252">
-            <poly data="4,0,0,84,0,84,84,0,84" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="10" fixedrot="true" fric="0.2" gid="4" id="16" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Power Up Gem" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="17" static="false">
         <snippets/>
     </actor>
@@ -264,17 +256,17 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="9" fixedrot="true" fric="0.2" gid="8" id="13" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Skuller Monster" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="14" static="false">
         <snippets/>
     </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="26" fixedrot="false" fric="0.2" gid="3" id="48" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Snake" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="49" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="60" id="49" name="Snake" shared="false" width="45">
+        <anim across="2" down="2" durations="100,100,100,100" height="120" id="0" loop="true" name="Animation 0" numframes="4" originx="22" originy="30" sync="false" version="2" width="90">
+            <poly data="4,0,0,45,0,45,60,0,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="60" id="12" name="Spawner" shared="false" width="40">
         <anim across="3" down="2" durations="100,100,100,100,100,100" height="120" id="0" loop="true" name="Animation 0" numframes="6" originx="10" originy="10" sync="false" version="2" width="120">
             <poly data="4,0,0,40,0,40,60,0,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="15" fixedrot="false" fric="0.2" gid="5" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Thunder Egg" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="true">
-        <snippets/>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="28" id="27" name="Thunder Egg" shared="false" width="21">
-        <anim across="1" down="1" durations="100" height="28" id="0" loop="true" name="Animation 0" numframes="1" originx="10" originy="14" sync="false" version="2" width="21">
-            <poly data="4,0,0,21,0,21,28,0,28" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
 </pack>
