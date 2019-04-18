@@ -116,7 +116,7 @@ class SceneEvents_0 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				if((Engine.engine.getGameAttribute("Enemies Killed") >= 1))
+				if((Engine.engine.getGameAttribute("Enemies Killed") >= 25))
 				{
 					Engine.engine.setGameAttribute("Game Over", true);
 				}

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <event-periodic comment="false" x="8" y="33">
+        <event-periodic comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <if comment="false" x="19" y="60">
+                <if comment="false" x="26" y="42">
                     <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="30" y="90">
-                            <actortype eid="2" id="0"/>
+                        <create-actor3 comment="false" x="37" y="72">
+                            <actortype eid="48" id="0"/>
                             <get-xy comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
                                 <int id="1" val="0"/>

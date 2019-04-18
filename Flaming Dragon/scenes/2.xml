@@ -8,8 +8,9 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="3" id="46" name="Blobby 1" sx="1.0" sy="1.0" x="27" y="26" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="48" name="Snake 2" sx="1.0" sy="1.0" x="573" y="24" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="0" id="0" name="Flamez 3" sx="1.0" sy="1.0" x="295" y="364" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="6" id="50" name="Blobby Spawner 4" sx="1.0" sy="1.0" x="25" y="26" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="52" name="Snake Spawner 5" sx="1.0" sy="1.0" x="576" y="21" z="0"/>
     </actors>
     <snippets/>
     <terrain>

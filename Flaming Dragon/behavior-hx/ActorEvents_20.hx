@@ -101,7 +101,7 @@ class ActorEvents_20 extends ActorScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		_HealthPoints = asNumber(3);
+		_HealthPoints = asNumber(30);
 		propertyChanged("_HealthPoints", _HealthPoints);
 		Engine.engine.setGameAttribute("Score", 1);
 		
@@ -112,8 +112,9 @@ class ActorEvents_20 extends ActorScript
 			{
 				if((_HealthPoints <= 0))
 				{
+					createRecycledActor(getActorType(18), 316, 62, Script.FRONT);
+					Engine.engine.setGameAttribute("Enemies Killed", (Engine.engine.getGameAttribute("Enemies Killed") + 1));
 					recycleActor(actor);
-					Engine.engine.setGameAttribute("Enemies Killed", 1);
 				}
 			}
 		});

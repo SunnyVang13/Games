@@ -12,7 +12,7 @@
                     <int id="2" val="20"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
-                    <int id="0" val="Level 1 Boss"/>
+                    <int id="0" val="Level 2 Boss"/>
                     <int id="1" val="475"/>
                     <int id="2" val="435"/>
                 </draw-text>
@@ -88,16 +88,17 @@
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
         <event-collide-actortotype comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <scene-change-through comment="false" x="26" y="47">
-                    <scene eid="2" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="1"/>
-                </scene-change-through>
-            </group>
+            <group eventID="4" id="-1"/>
             <ACTOR eid="2" id="0"/>
             <actortype eid="44" id="1"/>
         </event-collide-actortotype>
+    </group>
+    <group eventID="4" id="1">
+        <scene-change-through comment="false" x="94" y="159">
+            <scene eid="2" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="1"/>
+        </scene-change-through>
     </group>
     <group eventID="4" id="-1"/>
 </groups>

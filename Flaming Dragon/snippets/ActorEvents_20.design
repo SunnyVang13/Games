@@ -4,7 +4,7 @@
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
                 <set-val-12-1 comment="false" x="26" y="40">
-                    <int id="0" val="3"/>
+                    <int id="0" val="30"/>
                 </set-val-12-1>
                 <set-game-val-4 comment="false" x="26" y="60">
                     <int id="0" val="1"/>
@@ -44,12 +44,21 @@
             <group eventID="3" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="3" id="-1">
-                        <die comment="false" x="37" y="70">
+                        <create-actor3 comment="false" x="37" y="70">
+                            <actortype eid="18" id="0"/>
+                            <int id="1" val="316"/>
+                            <int id="2" val="62"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-game-val-5 comment="false" x="37" y="97">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-game-val-5>
+                        <die comment="false" x="37" y="127">
                             <ACTOR eid="this" id="0"/>
                         </die>
-                        <set-game-val-5 comment="false" x="37" y="97">
-                            <int id="0" val="1"/>
-                        </set-game-val-5>
                     </group>
                     <lesseq comment="false" id="0" x="0" y="0">
                         <get-val-12-1 comment="false" id="0" x="0" y="0"/>

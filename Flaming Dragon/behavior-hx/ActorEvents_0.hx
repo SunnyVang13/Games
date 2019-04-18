@@ -229,15 +229,6 @@ class ActorEvents_0 extends ActorScript
 		/* ======================== Actor of Type ========================= */
 		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled && sameAsAny(getActorType(26), event.otherActor.getType(),event.otherActor.getGroup()))
-			{
-				recycleActor(event.otherActor);
-			}
-		});
-		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
 			if(wrapper.enabled && sameAsAny(getActorType(30), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
 				recycleActor(event.otherActor);

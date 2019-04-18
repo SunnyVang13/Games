@@ -70,7 +70,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_1 extends SceneScript
+class SceneEvents_2 extends SceneScript
 {
 	
 	
@@ -93,7 +93,11 @@ class SceneEvents_1 extends SceneScript
 			{
 				g.setFont(getFont(41));
 				g.drawString("" + "Lives:", 25, 20);
-				g.drawString("" + "Level 2 Boss", 475, 435);
+				g.drawString("" + "Enemies Killed:", 362, 20);
+				g.drawString("" + Engine.engine.getGameAttribute("Enemies Killed"), 542, 20.5);
+				g.drawString("" + "Diamonds Collected:", 362, 35);
+				g.drawString("" + Engine.engine.getGameAttribute("Diamonds Collected"), 600, 35.5);
+				g.drawString("" + "Level 3", 530, 435);
 				if((Engine.engine.getGameAttribute("Game Over") && true))
 				{
 					g.drawString("" + "You Win!", 264, 210);
@@ -107,7 +111,7 @@ class SceneEvents_1 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				if((Engine.engine.getGameAttribute("Enemies Killed") >= 1))
+				if((Engine.engine.getGameAttribute("Enemies Killed") >= 50))
 				{
 					Engine.engine.setGameAttribute("Game Over", true);
 				}
@@ -116,6 +120,15 @@ class SceneEvents_1 extends SceneScript
 					createRecycledActor(getActorType(44), 616, 224, Script.FRONT);
 					Engine.engine.setGameAttribute("doors", 1);
 				}
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(getActor(3), function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(44), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				switchScene(GameModel.get().scenes.get(3).getID(), null, createCrossfadeTransition(1));
 			}
 		});
 		

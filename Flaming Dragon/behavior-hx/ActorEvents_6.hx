@@ -112,6 +112,46 @@ class ActorEvents_6 extends ActorScript
 			}
 		});
 		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(46), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				event.otherActor.shout("_customEvent_" + "Hit");
+				recycleActor(actor);
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(48), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				event.otherActor.shout("_customEvent_" + "Hit");
+				recycleActor(actor);
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(22), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				event.otherActor.shout("_customEvent_" + "Hit");
+				recycleActor(actor);
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(34), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				event.otherActor.shout("_customEvent_" + "Hit");
+				recycleActor(actor);
+			}
+		});
+		
 		/* ======================= After N seconds ======================== */
 		runLater(1000 * 1.5, function(timeTask:TimedTask):Void
 		{

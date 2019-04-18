@@ -40,7 +40,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -70,13 +69,31 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_1 extends SceneScript
+class ActorEvents_46 extends ActorScript
 {
+	public var _HealthPoints:Float;
+	public var _Drop:Float;
 	
-	
-	public function new(dummy:Int, dummy2:Engine)
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_Hit():Void
 	{
-		super();
+		_HealthPoints -= 1;
+		propertyChanged("_HealthPoints", _HealthPoints);
+		actor.setFilter([createNegativeFilter()]);
+		runLater(1000 * .1, function(timeTask:TimedTask):Void
+		{
+			actor.clearFilters();
+		}, actor);
+	}
+	
+	
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+	{
+		super(actor);
+		nameMap.set("Health Points", "_HealthPoints");
+		_HealthPoints = 0.0;
+		nameMap.set("Drop", "_Drop");
+		_Drop = 0.0;
 		
 	}
 	
@@ -84,20 +101,17 @@ class SceneEvents_1 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		Engine.engine.setGameAttribute("doors", 0);
+		_HealthPoints = asNumber(5);
+		propertyChanged("_HealthPoints", _HealthPoints);
 		
-		/* ========================= When Drawing ========================= */
-		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				g.setFont(getFont(41));
-				g.drawString("" + "Lives:", 25, 20);
-				g.drawString("" + "Level 2 Boss", 475, 435);
 				if((Engine.engine.getGameAttribute("Game Over") && true))
 				{
-					g.drawString("" + "You Win!", 264, 210);
-					g.drawString("" + "Enter through the door to continue >>>", 115, 240);
+					return;
 				}
 			}
 		});
@@ -107,14 +121,41 @@ class SceneEvents_1 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				if((Engine.engine.getGameAttribute("Enemies Killed") >= 1))
+				actor.push((Engine.engine.getGameAttribute("Hero X") - actor.getX()), (Engine.engine.getGameAttribute("Hero Y") - actor.getY()), 1);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(!(Engine.engine.getGameAttribute("Game Over")))
 				{
-					Engine.engine.setGameAttribute("Game Over", true);
-				}
-				if((Engine.engine.getGameAttribute("Game Over") && (Engine.engine.getGameAttribute("doors") < 1)))
-				{
-					createRecycledActor(getActorType(44), 616, 224, Script.FRONT);
-					Engine.engine.setGameAttribute("doors", 1);
+					if((_HealthPoints <= 0))
+					{
+						_Drop = asNumber(randomInt(Math.floor(1), Math.floor(10)));
+						propertyChanged("_Drop", _Drop);
+						Engine.engine.setGameAttribute("Debug", ("" + _Drop));
+					}
+					if((_Drop <= 5))
+					{
+						return;
+					}
+					else if(((5 < _Drop) && (_Drop <= 0)))
+					{
+						createRecycledActor(getActorType(8), actor.getX(), actor.getY(), Script.FRONT);
+					}
+					else if(((8 < _Drop) && (_Drop <= 9)))
+					{
+						createRecycledActor(getActorType(38), actor.getX(), actor.getY(), Script.FRONT);
+					}
+					else if(((9 < _Drop) && (_Drop <= 10)))
+					{
+						createRecycledActor(getActorType(16), actor.getX(), actor.getY(), Script.FRONT);
+					}
+					Engine.engine.setGameAttribute("Enemies Killed", (Engine.engine.getGameAttribute("Enemies Killed") + 1));
+					recycleActor(actor);
 				}
 			}
 		});

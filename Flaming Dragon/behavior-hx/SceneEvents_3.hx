@@ -70,7 +70,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_1 extends SceneScript
+class SceneEvents_3 extends SceneScript
 {
 	
 	
@@ -93,7 +93,7 @@ class SceneEvents_1 extends SceneScript
 			{
 				g.setFont(getFont(41));
 				g.drawString("" + "Lives:", 25, 20);
-				g.drawString("" + "Level 2 Boss", 475, 435);
+				g.drawString("" + "Level 4 Boss", 475, 435);
 				if((Engine.engine.getGameAttribute("Game Over") && true))
 				{
 					g.drawString("" + "You Win!", 264, 210);
@@ -116,6 +116,15 @@ class SceneEvents_1 extends SceneScript
 					createRecycledActor(getActorType(44), 616, 224, Script.FRONT);
 					Engine.engine.setGameAttribute("doors", 1);
 				}
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(getActor(2), function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(44), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(1));
 			}
 		});
 		
