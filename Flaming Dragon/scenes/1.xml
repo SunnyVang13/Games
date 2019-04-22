@@ -8,8 +8,9 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="8" id="20" name="Ice Fire Dragon 1" sx="1.0" sy="1.0" x="277" y="26" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="8" id="20" name="Ice Fire Dragon 1" sx="1.0" sy="1.0" x="276" y="26" z="0"/>
         <actor a="0.0" aid="2" c="false" group="0" id="0" name="Flamez 2" sx="1.0" sy="1.0" x="302" y="368" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="54" name="Blue Fireball 3" sx="1.0" sy="1.0" x="295" y="70" z="0"/>
     </actors>
     <snippets/>
     <terrain>

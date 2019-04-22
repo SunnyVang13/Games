@@ -105,9 +105,7 @@
             </group>
         </step>
     </group>
-    <group eventID="2" id="-1">
-        <true comment="false" x="964" y="347"/>
-    </group>
+    <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="3" id="-1">

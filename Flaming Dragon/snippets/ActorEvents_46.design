@@ -182,20 +182,20 @@
     </group>
     <group eventID="4" id="-1"/>
     <group eventID="5" id="0">
-        <event-custom comment="false" x="15" y="15">
+        <event-custom comment="false" x="5" y="17">
             <group eventID="5" id="-1">
-                <incdec comment="false" x="26" y="40">
+                <incdec comment="false" x="16" y="42">
                     <int id="0" val="1"/>
                     <int id="1" val="1"/>
                     <int id="2" val="1"/>
                 </incdec>
-                <apply-filter comment="false" x="26" y="67">
+                <apply-filter comment="false" x="16" y="69">
                     <ACTOR eid="this" id="0"/>
                     <filter-negative comment="false" id="1" x="0" y="0"/>
                 </apply-filter>
-                <dolater comment="false" x="26" y="99">
+                <dolater comment="false" x="16" y="101">
                     <group eventID="5" id="-1">
-                        <clear-filter comment="false" x="37" y="126">
+                        <clear-filter comment="false" x="27" y="128">
                             <ACTOR eid="this" id="0"/>
                         </clear-filter>
                     </group>

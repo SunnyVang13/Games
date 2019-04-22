@@ -23,7 +23,7 @@
                 </incdec>
                 <apply-filter comment="false" x="26" y="67">
                     <ACTOR eid="this" id="0"/>
-                    <filter-grayscale comment="false" id="1" x="0" y="0"/>
+                    <filter-negative comment="false" id="1" x="0" y="0"/>
                 </apply-filter>
                 <dolater comment="false" x="26" y="99">
                     <group eventID="2" id="-1">
