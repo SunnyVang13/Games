@@ -32,12 +32,12 @@
                     <int id="2" val="35.5"/>
                 </draw-text>
                 <draw-text comment="false" x="39" y="175">
-                    <int id="0" val="Press space bar to shoot!"/>
+                    <int id="0" val="Challege:"/>
                     <int id="1" val="25"/>
                     <int id="2" val="415"/>
                 </draw-text>
                 <draw-text comment="false" x="39" y="195">
-                    <int id="0" val="Move with arrow keys"/>
+                    <int id="0" val="Kill 25 Enemies"/>
                     <int id="1" val="25"/>
                     <int id="2" val="435"/>
                 </draw-text>
@@ -49,7 +49,7 @@
                 <if comment="false" x="39" y="235">
                     <group eventID="1" id="-1">
                         <draw-text comment="false" x="50" y="265">
-                            <int id="0" val="You Win!"/>
+                            <int id="0" val="Level Complete!"/>
                             <int id="1" val="264"/>
                             <int id="2" val="210"/>
                         </draw-text>
@@ -60,7 +60,7 @@
                         </draw-text>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
-                        <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
                         <true comment="false" id="1" x="0" y="0"/>
                     </and>
                 </if>
@@ -73,9 +73,9 @@
             <group eventID="2" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="2" id="-1">
-                        <set-game-val-8 comment="false" x="37" y="70">
+                        <set-game-val-10 comment="false" x="37" y="70">
                             <true comment="false" id="0" x="0" y="0"/>
-                        </set-game-val-8>
+                        </set-game-val-10>
                     </group>
                     <moreeq comment="false" id="0" x="0" y="0">
                         <get-game-val-5 comment="false" id="0" x="0" y="0"/>
@@ -95,7 +95,7 @@
                         </set-game-val-9>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
-                        <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
                         <less comment="false" id="1" x="0" y="0">
                             <get-game-val-9 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="1"/>

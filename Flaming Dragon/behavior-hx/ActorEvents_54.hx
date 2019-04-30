@@ -87,7 +87,7 @@ class ActorEvents_54 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				actor.applyImpulse((Engine.engine.getGameAttribute("Hero X") - actor.getX()), (Engine.engine.getGameAttribute("Hero Y") - actor.getY()), 2);
+				actor.applyImpulse((Engine.engine.getGameAttribute("Hero X") - actor.getX()), (Engine.engine.getGameAttribute("Hero Y") - actor.getY()), 1);
 			}
 		});
 		

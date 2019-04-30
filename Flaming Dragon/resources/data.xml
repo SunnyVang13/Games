@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="33" fixedrot="false" fric="0.2" gid="8" id="56" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Bat" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="57" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="29" id="57" name="Bat" shared="false" width="42">
+        <anim across="3" down="2" durations="100,100,100,100,100,100" height="58" id="0" loop="true" name="Animation 0" numframes="6" originx="21" originy="14" sync="false" version="2" width="126">
+            <poly data="4,0,0,42,0,42,29,0,29" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="62" name="Beginning" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="25" id="7" name="Blast" shared="false" width="25">
         <anim across="2" down="2" durations="100,100,100,100" height="50" id="0" loop="true" name="Animation 0" numframes="4" originx="12" originy="12" sync="false" version="2" width="50">
             <poly data="4,0,0,25,0,25,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
@@ -21,7 +30,7 @@
             <poly data="4,0,0,40,0,40,60,0,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="31" fixedrot="true" fric="0.2" gid="3" id="54" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Blue Fireball" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="55" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="31" fixedrot="true" fric="0.2" gid="12" id="54" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Blue Fireball" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="55" static="false">
         <snippets/>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="48" id="55" name="Blue Fireball" shared="false" width="46">
@@ -103,9 +112,9 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="19" fixedrot="true" fric="0.2" gid="8" id="34" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Flamez the Dragon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="35" static="false">
         <snippets/>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="98" id="35" name="Flamez the Dragon" shared="false" width="80">
-        <anim across="3" down="2" durations="100,100,100,100,100" height="196" id="0" loop="true" name="Animation 0" numframes="5" originx="40" originy="49" sync="false" version="2" width="240">
-            <poly data="4,0,0,80,0,80,98,0,98" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="147" id="35" name="Flamez the Dragon" shared="false" width="120">
+        <anim across="3" down="2" durations="100,100,100,100,100" height="294" id="0" loop="true" name="Animation 0" numframes="5" originx="60" originy="73" sync="false" version="2" width="360">
+            <poly data="4,0,0,120,0,120,147,0,147" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="4" fixedrot="true" fric="0.2" gid="7" id="6" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Flaming Dragon Attack" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="7" static="false">
@@ -119,7 +128,23 @@
             <poly data="4,0,0,21,0,21,28,0,28" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="37" fixedrot="false" fric="0.2" gid="3" id="60" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Flaming Fireball" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="61" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="136" id="61" name="Flaming Fireball" shared="false" width="49">
+        <anim across="2" down="2" durations="100,100,100,100" height="272" id="0" loop="true" name="Animation 0" numframes="4" originx="24" originy="68" sync="false" version="2" width="98">
+            <poly data="4,0,0,49,0,49,136,0,136" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <font alphabet=" !&quot;#$%&amp;'()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿĀāĂăĄąĆćĈĉĊċČčĎďĐđĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħĨĩĪīĬĭĮįİıĲĳĴĵĶķĸĹĺĻļĽľĿŀŁłŃńŅņŇňŉŊŋŌōŎŏŐőŒœŔŕŖŗŘřŚśŜŝŞşŠšŢţŤťŦŧŨũŪūŬŭŮůŰűŲųŴŵŶŷŸŹźŻżŽžſ" atlasID="0" desc="" height="19" id="41" name="Game Text" offsets="0|0|0|,9|0|9,15|0|15,25|0|25,39|0|39,51|0|51,62|0|62,74|0|74,80|0|80,88|0|88,96|0|96,104|0|104,111|0|111,117|0|117,124|0|124,130|0|130,141|0|141,155|0|155,163|0|163,177|0|177,191|0|191,205|0|205,219|0|219,233|0|233,247|0|247,261|0|261,274|0|274,280|0|280,286|0|286,294|0|294,302|0|302,309|0|309,322|0|322,338|0|338,353|0|353,369|0|369,385|0|385,400|0|400,416|0|416,432|0|432,448|0|448,464|0|464,474|0|474,490|0|490,506|0|506,519|0|519,535|0|535,551|0|551,567|0|567,583|0|583,599|0|599,615|0|615,631|0|631,644|0|644,660|0|660,675|0|675,691|0|691,707|0|707,723|0|723,739|0|739,747|0|747,756|0|756,764|0|764,765|0|765,766|0|766,767|0|767,781|0|781,795|0|795,809|0|809,823|0|823,837|0|837,847|0|847,860|0|860,874|0|874,882|0|882,892|0|892,906|0|906,913|0|913,930|0|930,944|0|944,958|0|958,972|0|972,986|0|986,996|0|996,1009|0|1009,1019|0|1019,1033|0|1033,1047|0|1047,1065|0|1065,1079|0|1079,1092|0|1092,1106|0|1106,1115|0|1115,1121|0|1121,1130|0|1130,1131|0|1131,1132|0|1132,1133|0|1133,1134|0|1134,1135|0|1135,1136|0|1136,1137|0|1137,1138|0|1138,1139|0|1139,1140|0|1140,1141|0|1141,1142|0|1142,1143|0|1143,1144|0|1144,1145|0|1145,1146|0|1146,1147|0|1147,1148|0|1148,1149|0|1149,1150|0|1150,1151|0|1151,1152|0|1152,1153|0|1153,1154|0|1154,1155|0|1155,1156|0|1156,1157|0|1157,1158|0|1158,1159|0|1159,1160|0|1160,1161|0|1161,1162|0|1162,1163|0|1163,1164|0|1164,1165|0|1165,1166|0|1166,1167|0|1167,1168|0|1168,1169|0|1169,1170|0|1170,1171|0|1171,1172|0|1172,1173|0|1173,1174|0|1174,1175|0|1175,1176|0|1176,1177|0|1177,1178|0|1178,1179|0|1179,1180|0|1180,1181|0|1181,1182|0|1182,1183|0|1183,1184|0|1184,1185|0|1185,1186|0|1186,1187|0|1187,1188|0|1188,1189|0|1189,1190|0|1190,1191|0|1191,1192|0|1192,1193|0|1193,1194|0|1194,1195|0|1195,1196|0|1196,1197|0|1197,1198|0|1198,1199|0|1199,1200|0|1200,1201|0|1201,1217|0|1217,1238|0|1238,1239|0|1239,1240|0|1240,1241|0|1241,1242|0|1242,1243|0|1243,1244|0|1244,1245|0|1245,1246|0|1246,1247|0|1247,1248|0|1248,1249|0|1249,1250|0|1250,1251|0|1251,1252|0|1252,1253|0|1253,1254|0|1254,1255|0|1255,1271|0|1271,1272|0|1272,1273|0|1273,1274|0|1274,1275|0|1275,1276|0|1276,1277|0|1277,1278|0|1278,1279|0|1279,1280|0|1280,1281|0|1281,1282|0|1282,1283|0|1283,1296|0|1296,1317|0|1317,1318|0|1318,1319|0|1319,1320|0|1320,1321|0|1321,1322|0|1322,1323|0|1323,1324|0|1324,1325|0|1325,1326|0|1326,1327|0|1327,1328|0|1328,1329|0|1329,1330|0|1330,1331|0|1331,1332|0|1332,1333|0|1333,1334|0|1334" oid="-1" prerendered="false" rowHeight="19" shared="false"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="36" fixedrot="false" fric="0.2" gid="3" id="58" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Green Fireball" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="59" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="60" id="59" name="Green Fireball" shared="false" width="28">
+        <anim across="2" down="2" durations="100,100,100" height="120" id="0" loop="true" name="Animation 0" numframes="3" originx="14" originy="30" sync="false" version="2" width="56">
+            <poly data="4,0,0,28,0,28,60,0,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="20" fixedrot="true" fric="0.2" gid="9" id="38" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Heart Lives" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="39" static="false">
         <snippets/>
     </actor>

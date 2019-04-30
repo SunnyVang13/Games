@@ -18,7 +18,7 @@
                         <stop comment="false" x="37" y="70"/>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
-                        <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
                         <true comment="false" id="1" x="0" y="0"/>
                     </and>
                 </if>
@@ -174,7 +174,7 @@
                         </die>
                     </group>
                     <not comment="false" id="0" x="0" y="0">
-                        <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
                     </not>
                 </if>
             </group>

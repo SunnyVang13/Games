@@ -90,7 +90,7 @@ class ActorEvents_32 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				if(!(Engine.engine.getGameAttribute("Game Over")))
+				if(!(Engine.engine.getGameAttribute("Level Complete")))
 				{
 					createRecycledActor(getActorType(2), actor.getX(), actor.getY(), Script.MIDDLE);
 				}
@@ -102,7 +102,7 @@ class ActorEvents_32 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				if((Engine.engine.getGameAttribute("Game Over") && true))
+				if((Engine.engine.getGameAttribute("Level Complete") && true))
 				{
 					return;
 				}

@@ -93,10 +93,12 @@ class SceneEvents_3 extends SceneScript
 			{
 				g.setFont(getFont(41));
 				g.drawString("" + "Lives:", 25, 20);
-				g.drawString("" + "Level 4 Boss", 475, 435);
-				if((Engine.engine.getGameAttribute("Game Over") && true))
+				g.drawString("" + "Challege:", 25, 415);
+				g.drawString("" + "Kill the Emerald Dragon", 25, 435);
+				g.drawString("" + "Level 4 Boss", 470, 435);
+				if((Engine.engine.getGameAttribute("Level Complete") && true))
 				{
-					g.drawString("" + "You Win!", 264, 210);
+					g.drawString("" + "Level Complete!", 264, 210);
 					g.drawString("" + "Enter through the door to continue >>>", 115, 240);
 				}
 			}
@@ -109,9 +111,9 @@ class SceneEvents_3 extends SceneScript
 			{
 				if((Engine.engine.getGameAttribute("Enemies Killed") >= 1))
 				{
-					Engine.engine.setGameAttribute("Game Over", true);
+					Engine.engine.setGameAttribute("Level Complete", true);
 				}
-				if((Engine.engine.getGameAttribute("Game Over") && (Engine.engine.getGameAttribute("doors") < 1)))
+				if((Engine.engine.getGameAttribute("Level Complete") && (Engine.engine.getGameAttribute("doors") < 1)))
 				{
 					createRecycledActor(getActorType(44), 616, 224, Script.FRONT);
 					Engine.engine.setGameAttribute("doors", 1);

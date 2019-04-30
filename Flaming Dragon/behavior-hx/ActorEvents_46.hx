@@ -109,7 +109,7 @@ class ActorEvents_46 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				if((Engine.engine.getGameAttribute("Game Over") && true))
+				if((Engine.engine.getGameAttribute("Level Complete") && true))
 				{
 					return;
 				}
@@ -130,7 +130,7 @@ class ActorEvents_46 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				if(!(Engine.engine.getGameAttribute("Game Over")))
+				if(!(Engine.engine.getGameAttribute("Level Complete")))
 				{
 					if((_HealthPoints <= 0))
 					{

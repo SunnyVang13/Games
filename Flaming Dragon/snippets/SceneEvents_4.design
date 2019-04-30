@@ -12,25 +12,35 @@
                     <int id="2" val="20"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
+                    <int id="0" val="Challege:"/>
+                    <int id="1" val="25"/>
+                    <int id="2" val="415"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="107">
+                    <int id="0" val="Kill Flamez the Dragon"/>
+                    <int id="1" val="25"/>
+                    <int id="2" val="435"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="127">
                     <int id="0" val="Ultimate Boss Level"/>
                     <int id="1" val="385"/>
                     <int id="2" val="435"/>
                 </draw-text>
-                <if comment="false" x="26" y="107">
+                <if comment="false" x="26" y="147">
                     <group eventID="1" id="-1">
-                        <draw-text comment="false" x="37" y="137">
+                        <draw-text comment="false" x="37" y="177">
                             <int id="0" val="You&amp;apos;ve defeated the ultimate boss! "/>
                             <int id="1" val="110"/>
                             <int id="2" val="210"/>
                         </draw-text>
-                        <draw-text comment="false" x="37" y="157">
+                        <draw-text comment="false" x="37" y="197">
                             <int id="0" val="Collect the flaming egg and you win!"/>
                             <int id="1" val="100"/>
                             <int id="2" val="240"/>
                         </draw-text>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
-                        <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
                         <true comment="false" id="1" x="0" y="0"/>
                     </and>
                 </if>
@@ -43,34 +53,14 @@
             <group eventID="2" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="2" id="-1">
-                        <set-game-val-8 comment="false" x="37" y="70">
+                        <set-game-val-10 comment="false" x="37" y="70">
                             <true comment="false" id="0" x="0" y="0"/>
-                        </set-game-val-8>
+                        </set-game-val-10>
                     </group>
                     <moreeq comment="false" id="0" x="0" y="0">
                         <get-game-val-5 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
                     </moreeq>
-                </if>
-                <if comment="false" x="26" y="107">
-                    <group eventID="2" id="-1">
-                        <create-actor3 comment="false" x="37" y="142">
-                            <actortype eid="44" id="0"/>
-                            <int id="1" val="616"/>
-                            <int id="2" val="224"/>
-                            <int id="3" val="0"/>
-                        </create-actor3>
-                        <set-game-val-9 comment="false" x="37" y="169">
-                            <int id="0" val="1"/>
-                        </set-game-val-9>
-                    </group>
-                    <and comment="false" id="0" x="0" y="0">
-                        <get-game-val-8 comment="false" id="0" x="0" y="0"/>
-                        <less comment="false" id="1" x="0" y="0">
-                            <get-game-val-9 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="1"/>
-                        </less>
-                    </and>
                 </if>
             </group>
         </step>
