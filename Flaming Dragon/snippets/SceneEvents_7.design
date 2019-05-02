@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="41" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="This is Flamez the hero!"/>
+                    <int id="1" val="190"/>
+                    <int id="2" val="210"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="87">
+                    <int id="0" val="His skill uses fireballs."/>
+                    <int id="1" val="195"/>
+                    <int id="2" val="240"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1"/>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -293,7 +293,10 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_7" classname="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="35" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" shared="false" type="scene">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
     </snippet>
     <snippet actorid="58" attachedevent="true" class="scripts.ActorEvents_58" classname="scripts.ActorEvents_58" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="36" name="ActorEvents_58" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>

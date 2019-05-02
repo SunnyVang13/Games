@@ -197,6 +197,10 @@
                 <die comment="false" x="26" y="47">
                     <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
                 </die>
+                <setanim comment="false" x="26" y="79">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="Power Up"/>
+                </setanim>
             </group>
             <ACTOR eid="this" id="0"/>
             <actortype eid="16" id="1"/>
