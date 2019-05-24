@@ -79,7 +79,7 @@
                     </group>
                     <moreeq comment="false" id="0" x="0" y="0">
                         <get-game-val-5 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
+                        <int id="1" val="84"/>
                     </moreeq>
                 </if>
                 <if comment="false" x="26" y="107">

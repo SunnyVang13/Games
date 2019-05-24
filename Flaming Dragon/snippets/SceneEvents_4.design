@@ -34,8 +34,8 @@
                             <int id="2" val="210"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="197">
-                            <int id="0" val="Collect the flaming egg and you win!"/>
-                            <int id="1" val="100"/>
+                            <int id="0" val="Collect the flaming egg and exit the cave!"/>
+                            <int id="1" val="80"/>
                             <int id="2" val="240"/>
                         </draw-text>
                     </group>
@@ -62,8 +62,42 @@
                         <int id="1" val="1"/>
                     </moreeq>
                 </if>
+                <if comment="false" x="26" y="107">
+                    <group eventID="2" id="-1">
+                        <create-actor3 comment="false" x="37" y="142">
+                            <actortype eid="44" id="0"/>
+                            <int id="1" val="616"/>
+                            <int id="2" val="224"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <set-game-val-9 comment="false" x="37" y="169">
+                            <int id="0" val="1"/>
+                        </set-game-val-9>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                        <less comment="false" id="1" x="0" y="0">
+                            <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                        </less>
+                    </and>
+                </if>
             </group>
         </step>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <scene-change-through comment="false" x="26" y="47">
+                    <scene eid="6" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
+            <ACTOR eid="2" id="0"/>
+            <actortype eid="44" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

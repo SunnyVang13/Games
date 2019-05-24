@@ -12,48 +12,53 @@
                     <int id="2" val="20"/>
                 </draw-text>
                 <draw-text comment="false" x="39" y="85">
+                    <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="97"/>
+                    <int id="2" val="20"/>
+                </draw-text>
+                <draw-text comment="false" x="39" y="110">
                     <int id="0" val="Enemies Killed:"/>
                     <int id="1" val="362"/>
                     <int id="2" val="20"/>
                 </draw-text>
-                <draw-text comment="false" x="39" y="105">
+                <draw-text comment="false" x="39" y="130">
                     <get-game-val-5 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="542"/>
                     <int id="2" val="20.5"/>
                 </draw-text>
-                <draw-text comment="false" x="39" y="130">
+                <draw-text comment="false" x="39" y="155">
                     <int id="0" val="Diamonds Collected:"/>
                     <int id="1" val="362"/>
                     <int id="2" val="35"/>
                 </draw-text>
-                <draw-text comment="false" x="39" y="150">
+                <draw-text comment="false" x="39" y="175">
                     <get-game-val-6 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="600"/>
                     <int id="2" val="35.5"/>
                 </draw-text>
-                <draw-text comment="false" x="39" y="175">
+                <draw-text comment="false" x="39" y="200">
                     <int id="0" val="Challege:"/>
                     <int id="1" val="25"/>
                     <int id="2" val="415"/>
                 </draw-text>
-                <draw-text comment="false" x="39" y="195">
+                <draw-text comment="false" x="39" y="220">
                     <int id="0" val="Kill 25 Enemies"/>
                     <int id="1" val="25"/>
                     <int id="2" val="435"/>
                 </draw-text>
-                <draw-text comment="false" x="39" y="215">
+                <draw-text comment="false" x="39" y="240">
                     <int id="0" val="Level 1"/>
                     <int id="1" val="530"/>
                     <int id="2" val="435"/>
                 </draw-text>
-                <if comment="false" x="39" y="235">
+                <if comment="false" x="39" y="260">
                     <group eventID="1" id="-1">
-                        <draw-text comment="false" x="50" y="265">
+                        <draw-text comment="false" x="50" y="290">
                             <int id="0" val="Level Complete!"/>
                             <int id="1" val="264"/>
                             <int id="2" val="210"/>
                         </draw-text>
-                        <draw-text comment="false" x="50" y="285">
+                        <draw-text comment="false" x="50" y="310">
                             <int id="0" val="Enter through the door to continue &amp;gt;&amp;gt;&amp;gt;"/>
                             <int id="1" val="115"/>
                             <int id="2" val="240"/>
@@ -84,13 +89,24 @@
                 </if>
                 <if comment="false" x="26" y="107">
                     <group eventID="2" id="-1">
-                        <create-actor3 comment="false" x="37" y="142">
+                        <die comment="false" x="37" y="137">
+                            <ACTOR eid="40" id="0"/>
+                        </die>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="176">
+                    <group eventID="2" id="-1">
+                        <create-actor3 comment="false" x="37" y="211">
                             <actortype eid="44" id="0"/>
                             <int id="1" val="616"/>
                             <int id="2" val="224"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <set-game-val-9 comment="false" x="37" y="169">
+                        <set-game-val-9 comment="false" x="37" y="238">
                             <int id="0" val="1"/>
                         </set-game-val-9>
                     </group>
@@ -117,9 +133,9 @@
     </group>
     <group eventID="3" id="-1"/>
     <group eventID="5" id="0">
-        <event-collide-actortotype comment="false" x="15" y="15">
+        <event-collide-actortotype comment="false" x="54" y="44">
             <group eventID="5" id="-1">
-                <scene-change-through comment="false" x="26" y="47">
+                <scene-change-through comment="false" x="65" y="76">
                     <scene eid="1" id="0"/>
                     <int id="1" val="0"/>
                     <int id="2" val="1"/>
