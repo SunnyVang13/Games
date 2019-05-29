@@ -9,12 +9,22 @@
                 <draw-text comment="false" x="26" y="67">
                     <int id="0" val="This is Flamez the hero!"/>
                     <int id="1" val="190"/>
-                    <int id="2" val="210"/>
+                    <int id="2" val="100"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
                     <int id="0" val="His skill uses fireballs."/>
                     <int id="1" val="195"/>
-                    <int id="2" val="240"/>
+                    <int id="2" val="130"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="107">
+                    <int id="0" val="Use arrow keys to move"/>
+                    <int id="1" val="195"/>
+                    <int id="2" val="160"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="127">
+                    <int id="0" val="Use spacebar to shoot fireballs"/>
+                    <int id="1" val="150"/>
+                    <int id="2" val="190"/>
                 </draw-text>
             </group>
         </draw>
@@ -22,8 +32,34 @@
     <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <step comment="false" x="15" y="15">
-            <group eventID="2" id="-1"/>
+            <group eventID="2" id="-1">
+                <set-dxy comment="false" x="26" y="40">
+                    <ACTOR eid="1" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                </set-dxy>
+                <set-dxy comment="false" x="26" y="67">
+                    <ACTOR eid="1" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="0"/>
+                </set-dxy>
+            </group>
         </step>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="3" id="-1"/>
+            <int id="0" val="10"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-delay>
+    </group>
+    <group eventID="3" id="1">
+        <scene-change-through comment="false" x="379" y="229">
+            <scene eid="0" id="0"/>
+            <int id="1" val="0"/>
+            <int id="2" val="1"/>
+        </scene-change-through>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

@@ -9,7 +9,7 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="0" id="0" name="Flamez 1" sx="1.0" sy="1.0" x="295" y="303" z="0"/>
+        <actor a="0.0" aid="1" c="false" group="0" id="0" name="Flamez 1" sx="1.0" sy="1.0" x="293" y="302" z="0"/>
     </actors>
     <snippets/>
     <terrain/>
