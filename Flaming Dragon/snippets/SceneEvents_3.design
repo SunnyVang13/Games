@@ -30,7 +30,7 @@
                     <group eventID="1" id="-1">
                         <draw-text comment="false" x="37" y="177">
                             <int id="0" val="Level Complete!"/>
-                            <int id="1" val="264"/>
+                            <int id="1" val="244"/>
                             <int id="2" val="210"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="197">

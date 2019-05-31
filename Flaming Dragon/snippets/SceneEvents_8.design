@@ -17,10 +17,18 @@
     <group eventID="3" id="0">
         <draw comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <draw-text comment="false" x="26" y="40">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="41" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
                     <int id="0" val="Press ENTER to Start"/>
-                    <int id="1" val="250"/>
-                    <int id="2" val="400"/>
+                    <int id="1" val="200"/>
+                    <int id="2" val="380"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="87">
+                    <int id="0" val="Created by: Sunny Vang "/>
+                    <int id="1" val="350"/>
+                    <int id="2" val="450"/>
                 </draw-text>
             </group>
         </draw>

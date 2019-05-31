@@ -28,12 +28,12 @@
                 </draw-text>
                 <draw-text comment="false" x="39" y="155">
                     <int id="0" val="Diamonds Collected:"/>
-                    <int id="1" val="362"/>
+                    <int id="1" val="360"/>
                     <int id="2" val="35"/>
                 </draw-text>
                 <draw-text comment="false" x="39" y="175">
                     <get-game-val-6 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="600"/>
+                    <int id="1" val="598"/>
                     <int id="2" val="35.5"/>
                 </draw-text>
                 <draw-text comment="false" x="39" y="200">
@@ -55,7 +55,7 @@
                     <group eventID="1" id="-1">
                         <draw-text comment="false" x="50" y="290">
                             <int id="0" val="Level Complete!"/>
-                            <int id="1" val="264"/>
+                            <int id="1" val="244"/>
                             <int id="2" val="210"/>
                         </draw-text>
                         <draw-text comment="false" x="50" y="310">

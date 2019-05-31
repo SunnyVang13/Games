@@ -111,6 +111,7 @@ class ActorEvents_2 extends ActorScript
 			{
 				if((Engine.engine.getGameAttribute("Level Complete") && true))
 				{
+					recycleActor(actor);
 					return;
 				}
 			}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <scene-change-through comment="false" x="26" y="42">
+                    <scene eid="0" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
+            <control eid="6" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="41" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="Hearts:"/>
+                    <int id="1" val="95"/>
+                    <int id="2" val="90"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="87">
+                    <int id="0" val="Collect to get lives"/>
+                    <int id="1" val="95"/>
+                    <int id="2" val="110"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="107">
+                    <int id="0" val="Diamonds:"/>
+                    <int id="1" val="95"/>
+                    <int id="2" val="190"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="127">
+                    <int id="0" val="Collect for points"/>
+                    <int id="1" val="95"/>
+                    <int id="2" val="210"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="147">
+                    <int id="0" val="Gems:"/>
+                    <int id="1" val="95"/>
+                    <int id="2" val="285"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="167">
+                    <int id="0" val="Collect for a power up"/>
+                    <int id="1" val="95"/>
+                    <int id="2" val="305"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="187">
+                    <int id="0" val="Collect the 3 Dragon Eggs:"/>
+                    <int id="1" val="320"/>
+                    <int id="2" val="160"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="207">
+                    <int id="0" val="Press ENTER to begin"/>
+                    <int id="1" val="180"/>
+                    <int id="2" val="435"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

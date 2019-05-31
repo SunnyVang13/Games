@@ -70,7 +70,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_6 extends SceneScript
+class SceneEvents_8 extends SceneScript
 {
 	
 	
@@ -82,6 +82,26 @@ class SceneEvents_6 extends SceneScript
 	
 	override public function init()
 	{
+		
+		/* ========================= When Drawing ========================= */
+		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				g.setFont(getFont(41));
+				g.drawString("" + "Press ENTER to Start", 200, 380);
+				g.drawString("" + "Created by: Sunny Vang ", 350, 450);
+			}
+		});
+		
+		/* =========================== Keyboard =========================== */
+		addKeyStateListener("enter", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && pressed)
+			{
+				switchScene(GameModel.get().scenes.get(7).getID(), null, createCrossfadeTransition(1));
+			}
+		});
 		
 	}
 	

@@ -7,24 +7,39 @@
                     <font eid="41" id="0"/>
                 </set-font-new>
                 <draw-text comment="false" x="26" y="67">
-                    <int id="0" val="This is Flamez the hero!"/>
+                    <int id="0" val="This is Flamez the Hero!"/>
                     <int id="1" val="190"/>
-                    <int id="2" val="100"/>
+                    <int id="2" val="150"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
                     <int id="0" val="His skill uses fireballs."/>
                     <int id="1" val="195"/>
-                    <int id="2" val="130"/>
+                    <int id="2" val="180"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="107">
-                    <int id="0" val="Use arrow keys to move"/>
-                    <int id="1" val="195"/>
-                    <int id="2" val="160"/>
+                    <int id="0" val="Use ARROW KEYS"/>
+                    <int id="1" val="50"/>
+                    <int id="2" val="275"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="127">
-                    <int id="0" val="Use spacebar to shoot fireballs"/>
-                    <int id="1" val="150"/>
-                    <int id="2" val="190"/>
+                    <int id="0" val="to move"/>
+                    <int id="1" val="100"/>
+                    <int id="2" val="295"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="147">
+                    <int id="0" val="Use SPACEBAR"/>
+                    <int id="1" val="400"/>
+                    <int id="2" val="275"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="167">
+                    <int id="0" val="to shoot fireballs"/>
+                    <int id="1" val="390"/>
+                    <int id="2" val="295"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="187">
+                    <int id="0" val="Press ENTER to continue"/>
+                    <int id="1" val="180"/>
+                    <int id="2" val="435"/>
                 </draw-text>
             </group>
         </draw>
@@ -62,4 +77,18 @@
         </scene-change-through>
     </group>
     <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <scene-change-through comment="false" x="26" y="42">
+                    <scene eid="9" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
+            <control eid="6" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>

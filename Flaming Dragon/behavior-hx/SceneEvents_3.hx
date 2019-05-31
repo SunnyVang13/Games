@@ -70,7 +70,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_7 extends SceneScript
+class SceneEvents_3 extends SceneScript
 {
 	
 	
@@ -83,28 +83,24 @@ class SceneEvents_7 extends SceneScript
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		Engine.engine.setGameAttribute("doors", 0);
+		
 		/* ========================= When Drawing ========================= */
 		addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
 				g.setFont(getFont(41));
-				g.drawString("" + "This is Flamez the Hero!", 190, 150);
-				g.drawString("" + "His skill uses fireballs.", 195, 180);
-				g.drawString("" + "Use ARROW KEYS", 50, 275);
-				g.drawString("" + "to move", 100, 295);
-				g.drawString("" + "Use SPACEBAR", 400, 275);
-				g.drawString("" + "to shoot fireballs", 390, 295);
-				g.drawString("" + "Press ENTER to continue", 180, 435);
-			}
-		});
-		
-		/* =========================== Keyboard =========================== */
-		addKeyStateListener("enter", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && pressed)
-			{
-				switchScene(GameModel.get().scenes.get(9).getID(), null, createCrossfadeTransition(1));
+				g.drawString("" + "Lives:", 25, 20);
+				g.drawString("" + "Challege:", 25, 415);
+				g.drawString("" + "Kill the Emerald Dragon", 25, 435);
+				g.drawString("" + "Level 4 Boss", 470, 435);
+				if((Engine.engine.getGameAttribute("Level Complete") && true))
+				{
+					g.drawString("" + "Level Complete!", 244, 210);
+					g.drawString("" + "Enter through the door to continue >>>", 115, 240);
+				}
 			}
 		});
 		
@@ -113,8 +109,24 @@ class SceneEvents_7 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				getActor(1).setXVelocity(0);
-				getActor(1).setYVelocity(0);
+				if((Engine.engine.getGameAttribute("Enemies Killed") >= 77))
+				{
+					Engine.engine.setGameAttribute("Level Complete", true);
+				}
+				if((Engine.engine.getGameAttribute("Level Complete") && (Engine.engine.getGameAttribute("doors") < 1)))
+				{
+					createRecycledActor(getActorType(44), 616, 224, Script.FRONT);
+					Engine.engine.setGameAttribute("doors", 1);
+				}
+			}
+		});
+		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(getActor(2), function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(44), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(1));
 			}
 		});
 		

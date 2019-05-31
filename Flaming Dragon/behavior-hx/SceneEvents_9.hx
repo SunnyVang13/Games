@@ -70,7 +70,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_7 extends SceneScript
+class SceneEvents_9 extends SceneScript
 {
 	
 	
@@ -89,13 +89,14 @@ class SceneEvents_7 extends SceneScript
 			if(wrapper.enabled)
 			{
 				g.setFont(getFont(41));
-				g.drawString("" + "This is Flamez the Hero!", 190, 150);
-				g.drawString("" + "His skill uses fireballs.", 195, 180);
-				g.drawString("" + "Use ARROW KEYS", 50, 275);
-				g.drawString("" + "to move", 100, 295);
-				g.drawString("" + "Use SPACEBAR", 400, 275);
-				g.drawString("" + "to shoot fireballs", 390, 295);
-				g.drawString("" + "Press ENTER to continue", 180, 435);
+				g.drawString("" + "Hearts:", 95, 90);
+				g.drawString("" + "Collect to get lives", 95, 110);
+				g.drawString("" + "Diamonds:", 95, 190);
+				g.drawString("" + "Collect for points", 95, 210);
+				g.drawString("" + "Gems:", 95, 285);
+				g.drawString("" + "Collect for a power up", 95, 305);
+				g.drawString("" + "Collect the 3 Dragon Eggs:", 320, 160);
+				g.drawString("" + "Press ENTER to begin", 180, 435);
 			}
 		});
 		
@@ -104,17 +105,7 @@ class SceneEvents_7 extends SceneScript
 		{
 			if(wrapper.enabled && pressed)
 			{
-				switchScene(GameModel.get().scenes.get(9).getID(), null, createCrossfadeTransition(1));
-			}
-		});
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				getActor(1).setXVelocity(0);
-				getActor(1).setYVelocity(0);
+				switchScene(GameModel.get().scenes.get(0).getID(), null, createCrossfadeTransition(1));
 			}
 		});
 		

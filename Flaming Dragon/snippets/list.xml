@@ -296,8 +296,9 @@
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="2" name="step" order="3" repeats="true"/>
-            <event displayName="After N secs" enabled="true" id="3" name="event-delay" order="2" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="4" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="3" name="event-delay" order="3" repeats="true"/>
+            <event displayName="Keyboard" enabled="true" id="4" name="event-key-press-release" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="58" attachedevent="true" class="scripts.ActorEvents_58" classname="scripts.ActorEvents_58" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="36" name="ActorEvents_58" oid="-1" package="scripts." shared="false" type="actor">
@@ -324,5 +325,12 @@
     <snippet actorid="65" attachedevent="true" class="scripts.ActorEvents_65" classname="scripts.ActorEvents_65" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="39" name="ActorEvents_65" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_9" classname="scripts.SceneEvents_9" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="40" name="SceneEvents_9" oid="-1" package="scripts." sceneid="9" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Keyboard" enabled="true" id="1" name="event-key-press-release" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="2" name="draw" order="1" repeats="true"/>
+        </events>
     </snippet>
 </pack>

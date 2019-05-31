@@ -50,7 +50,7 @@
                     <group eventID="1" id="-1">
                         <draw-text comment="false" x="37" y="267">
                             <int id="0" val="You Win!"/>
-                            <int id="1" val="264"/>
+                            <int id="1" val="244"/>
                             <int id="2" val="210"/>
                         </draw-text>
                         <draw-text comment="false" x="37" y="287">
