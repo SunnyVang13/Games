@@ -73,13 +73,6 @@ class ActorEvents_11 extends ActorScript
 {
 	public var _HealthPoints:Float;
 	
-	/* ========================= Custom Event ========================= */
-	public function _customEvent_Hit():Void
-	{
-		_HealthPoints -= 1;
-		propertyChanged("_HealthPoints", _HealthPoints);
-	}
-	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
@@ -91,10 +84,6 @@ class ActorEvents_11 extends ActorScript
 	
 	override public function init()
 	{
-		
-		/* ======================== When Creating ========================= */
-		_HealthPoints = asNumber(8);
-		propertyChanged("_HealthPoints", _HealthPoints);
 		
 		/* ======================= Every N seconds ======================== */
 		runPeriodically(1000 * 5, function(timeTask:TimedTask):Void
@@ -116,19 +105,6 @@ class ActorEvents_11 extends ActorScript
 				if((Engine.engine.getGameAttribute("Level Complete") && true))
 				{
 					return;
-				}
-			}
-		});
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((_HealthPoints <= 0))
-				{
-					recycleActor(actor);
-					Engine.engine.setGameAttribute("Enemies Killed", (Engine.engine.getGameAttribute("Enemies Killed") + 1));
 				}
 			}
 		});

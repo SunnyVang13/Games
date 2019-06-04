@@ -12,28 +12,53 @@
                     <int id="2" val="20"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
+                    <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="97"/>
+                    <int id="2" val="20"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="112">
+                    <int id="0" val="Enemies Killed:"/>
+                    <int id="1" val="362"/>
+                    <int id="2" val="20"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="132">
+                    <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="542"/>
+                    <int id="2" val="20.5"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="157">
+                    <int id="0" val="Diamonds Collected:"/>
+                    <int id="1" val="360"/>
+                    <int id="2" val="35"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="177">
+                    <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="598"/>
+                    <int id="2" val="35.5"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="202">
                     <int id="0" val="Challege:"/>
                     <int id="1" val="25"/>
                     <int id="2" val="415"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="107">
+                <draw-text comment="false" x="26" y="222">
                     <int id="0" val="Kill Flamez the Dragon"/>
                     <int id="1" val="25"/>
                     <int id="2" val="435"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="127">
+                <draw-text comment="false" x="26" y="242">
                     <int id="0" val="Ultimate Boss Level"/>
                     <int id="1" val="385"/>
                     <int id="2" val="435"/>
                 </draw-text>
-                <if comment="false" x="26" y="147">
+                <if comment="false" x="26" y="262">
                     <group eventID="1" id="-1">
-                        <draw-text comment="false" x="37" y="177">
+                        <draw-text comment="false" x="37" y="292">
                             <int id="0" val="You&amp;apos;ve defeated the ultimate boss! "/>
                             <int id="1" val="110"/>
                             <int id="2" val="210"/>
                         </draw-text>
-                        <draw-text comment="false" x="37" y="197">
+                        <draw-text comment="false" x="37" y="312">
                             <int id="0" val="Collect the flaming egg and exit the cave!"/>
                             <int id="1" val="80"/>
                             <int id="2" val="240"/>

@@ -107,9 +107,6 @@
         <blocks/>
         <events>
             <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
-            <event displayName="Created" enabled="true" id="3" name="init" order="4" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="4" name="step" order="5" repeats="true"/>
-            <event displayName="Custom Event" enabled="true" id="5" name="event-custom" order="6" repeats="true"/>
             <event displayName="Updating" enabled="true" id="6" name="step" order="3" repeats="true"/>
         </events>
     </snippet>
@@ -249,7 +246,7 @@
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
             <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="true"/>
+            <event displayName="Actor - Type" enabled="true" id="3" name="event-collide-actortotype" order="3" repeats="false"/>
             <event displayName="Created" enabled="true" id="4" name="init" order="4" repeats="true"/>
         </events>
     </snippet>
@@ -272,7 +269,7 @@
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
-            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="false"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
             <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
             <event displayName="Actor - Type" enabled="true" id="4" name="event-collide-actortotype" order="4" repeats="true"/>
         </events>
@@ -290,7 +287,9 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_6" classname="scripts.SceneEvents_6" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="34" name="SceneEvents_6" oid="-1" package="scripts." sceneid="6" shared="false" type="scene">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_7" classname="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="35" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" shared="false" type="scene">
         <blocks/>

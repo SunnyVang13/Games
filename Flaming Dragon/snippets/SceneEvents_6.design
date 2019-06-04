@@ -1,2 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="41" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="Congratulations!"/>
+                    <int id="1" val="225"/>
+                    <int id="2" val="150"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="87">
+                    <int id="0" val="You&amp;apos;ve collected all 3 eggs..."/>
+                    <int id="1" val="160"/>
+                    <int id="2" val="180"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="107">
+                    <int id="0" val="Your mission is now complete!!!"/>
+                    <int id="1" val="140"/>
+                    <int id="2" val="210"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="127">
+                    <int id="0" val="Thanks for playing!"/>
+                    <int id="1" val="210"/>
+                    <int id="2" val="240"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
